@@ -1,0 +1,32 @@
+c:\users\weiqi\documents\visual studio 2012\Projects\VBFHelp\VBFHelp\bin\Debug\VBFHelp.exe.config
+c:\users\weiqi\documents\visual studio 2012\Projects\VBFHelp\VBFHelp\bin\Debug\VBFHelp.exe
+c:\users\weiqi\documents\visual studio 2012\Projects\VBFHelp\VBFHelp\bin\Debug\VBFHelp.pdb
+c:\users\weiqi\documents\visual studio 2012\Projects\VBFHelp\VBFHelp\obj\Debug\VBFHelp.FormMain.resources
+c:\users\weiqi\documents\visual studio 2012\Projects\VBFHelp\VBFHelp\obj\Debug\VBFHelp.Properties.Resources.resources
+c:\users\weiqi\documents\visual studio 2012\Projects\VBFHelp\VBFHelp\obj\Debug\VBFHelp.csproj.GenerateResource.Cache
+c:\users\weiqi\documents\visual studio 2012\Projects\VBFHelp\VBFHelp\obj\Debug\VBFHelp.exe
+c:\users\weiqi\documents\visual studio 2012\Projects\VBFHelp\VBFHelp\obj\Debug\VBFHelp.pdb
+D:\work\geely\VBFHelp\VBFHelp\bin\Debug\VBFHelp.exe.config
+D:\work\geely\VBFHelp\VBFHelp\bin\Debug\VBFHelp.exe
+D:\work\geely\VBFHelp\VBFHelp\bin\Debug\VBFHelp.pdb
+D:\work\geely\VBFHelp\VBFHelp\obj\Debug\VBFHelp.FormMain.resources
+D:\work\geely\VBFHelp\VBFHelp\obj\Debug\VBFHelp.Properties.Resources.resources
+D:\work\geely\VBFHelp\VBFHelp\obj\Debug\VBFHelp.csproj.GenerateResource.Cache
+D:\work\geely\VBFHelp\VBFHelp\obj\Debug\VBFHelp.exe
+D:\work\geely\VBFHelp\VBFHelp\obj\Debug\VBFHelp.pdb
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\bin\Debug\VBFHelp.exe.config
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\obj\Debug\VBFHelp.exe
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\obj\Debug\VBFHelp.pdb
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\bin\Debug\VBFHelp.exe
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\bin\Debug\VBFHelp.pdb
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\obj\Debug\VBFHelp.FormMain.resources
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\obj\Debug\VBFHelp.Properties.Resources.resources
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\obj\Debug\VBFHelp.csproj.GenerateResource.Cache
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\adb.exe
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\AdbWinApi.dll
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\AdbWinUsbApi.dll
+D:\work\geely\11.SoftwareDev_OTA\5.SoftwareSupportTools(SW)\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\fastboot.exe
+D:\work\geely\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\adb.exe
+D:\work\geely\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\AdbWinApi.dll
+D:\work\geely\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\AdbWinUsbApi.dll
+D:\work\geely\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\fastboot.exe

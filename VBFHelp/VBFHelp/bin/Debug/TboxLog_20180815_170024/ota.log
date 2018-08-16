@@ -1,0 +1,1425 @@
+crit    1980/01/06 00:00:40.350784 [OTA]M=ota func:main line:125 ========OTA Ver[0.972]========##################
+info    1980/01/06 00:00:40.351800 [OTA]M=ota func:nswCommonInit line:240 common init
+info    1980/01/06 00:00:40.352193 [OTA]M=ota func:nswPathInit line:266 path init
+info    1980/01/06 00:00:40.352513 [OTA]M=ota func:nswConfigInit line:285 config init
+info    1980/01/06 00:00:40.353996 [OTA]M=ota func:wswcmn_init_mul_timer line:350 timer init
+info    1980/01/06 00:00:40.355125 [OTA]M=ota func:wswcmn_init_queue line:640 queue init
+info    1980/01/06 00:00:40.356698 [OTA]M=ota func:nswQueueThreadInit line:303 Queue Thread Init
+info    1980/01/06 00:00:40.395719 [OTA]M=ota func:nswServiceInit line:322 Service Init
+info    1980/01/06 00:00:40.404912 [OTA]M=ota func:RPC_SvcInit line:181 RPC service init
+info    1980/01/06 00:00:40.405544 [OTA]M=IPC_RX func:wswcmn_set_thread_name line:1220 thread create [IPC_RX]
+info    1980/01/06 00:00:40.407683 [OTA]M=CAN_TX func:wswcmn_set_thread_name line:1220 thread create [CAN_TX]
+info    1980/01/06 00:00:40.408280 [OTA]M=FEM_RX func:wswcmn_set_thread_name line:1220 thread create [FEM_RX]
+info    1980/01/06 00:00:40.408699 [OTA]M=FEM_RX func:wswcmn_del_timer line:484 del timer:7
+info    1980/01/06 00:00:40.409053 [OTA]M=FEM_RX func:wswcmn_set_timer line:408 set timerID:[7], interval:[100]ms
+info    1980/01/06 00:00:40.412363 [OTA]M=CLD_TX func:wswcmn_set_thread_name line:1220 thread create [CLD_TX]
+info    1980/01/06 00:00:40.416717 [OTA]M=IPC_TX func:wswcmn_set_thread_name line:1220 thread create [IPC_TX]
+info    1980/01/06 00:00:40.417369 [OTA]M=SYSMGR func:wswcmn_set_thread_name line:1220 thread create [SYSMGR]
+info    1980/01/06 00:00:40.417617 [OTA]M=SYSMGR func:nswSysInit line:224 Sys init
+info    1980/01/06 00:00:40.643318 [OTA]M=ota func:RPC_StatusHandler line:463 RPC status handler=[0x00]
+info    1980/01/06 00:00:40.700605 [OTA]M=ota func:RPC_SvcInit line:193 RPC service init end
+info    1980/01/06 00:00:40.700726 [OTA]M=ota func:nswAppModuleInit line:341 App Module Init
+info    1980/01/06 00:00:40.701666 [OTA]M=ota func:Settings_Load line:103 Settings load
+info    1980/01/06 00:00:40.702368 [OTA]M=ota func:Settings_InitParam line:134 init param...
+info    1980/01/06 00:00:40.703321 [OTA]M=ota func:wuwcmn_GetFileSize line:966 get file size=[0x00f0],[/app/master.cfg]
+crit    1980/01/06 00:00:40.703387 [OTA]M=ota func:wubcmn_CheckFileExist line:1040 File is found,size=[240]
+info    1980/01/06 00:00:40.703440 [OTA]M=ota func:Settings_ReadParam line:153 read param start
+info    1980/01/06 00:00:40.703523 [OTA]M=ota func:wuwcmn_GetFileSize line:966 get file size=[0x00f0],[/app/master.cfg]
+info    1980/01/06 00:00:40.703578 [OTA]M=ota func:wuwcmn_ReadFileData line:1080 read file data,offset=[0x0000],readsize=[0x00f0],[/app/master.cfg]
+info    1980/01/06 00:00:40.703683 [OTA]M=ota func:wuwcmn_GetFileSize line:966 get file size=[0x00f0],[/app/master.cfg]
+info    1980/01/06 00:00:40.704178 [OTA]M=ota func:wuwcmn_ReadFileData line:1119 fread req size=[0x00f0],ret size=[0x0001],remain=[0x00f0],total read=[0x00f0],filesize=[0x00f0]
+info    1980/01/06 00:00:40.729896 [OTA]M=ota func:Json_ParseTboxConfig line:1550 parse tbox cfg...
+info    1980/01/06 00:00:40.771515 [OTA]M=ota func:GetValueInteger line:591 get integer name=[last_client_sync_time],number=[0]
+info    1980/01/06 00:00:40.786130 [OTA]M=ota func:GetValueInteger line:591 get integer name=[client_sync_interval],number=[5]
+info    1980/01/06 00:00:40.786647 [OTA]M=ota func:GetValueInteger line:591 get integer name=[client_sync_retry_max],number=[1]
+info    1980/01/06 00:00:40.787024 [OTA]M=ota func:GetValueInteger line:591 get integer name=[download_retry_interval],number=[1]
+info    1980/01/06 00:00:40.787374 [OTA]M=ota func:GetValueInteger line:591 get integer name=[download_retry_cnt],number=[1]
+info    1980/01/06 00:00:40.787708 [OTA]M=ota func:GetValueInteger line:591 get integer name=[install_retry_max],number=[3]
+info    1980/01/06 00:00:40.788042 [OTA]M=ota func:GetValueInteger line:591 get integer name=[usb_install_time],number=[0]
+info    1980/01/06 00:00:40.788491 [OTA]M=ota func:GetValueInteger line:591 get integer name=[ecu_flash_stage],number=[0]
+info    1980/01/06 00:00:40.788824 [OTA]M=ota func:Settings_ReadParam line:164 read param end
+info    1980/01/06 00:00:40.808190 [OTA]M=ota func:Settings_CoreDump line:160 core dump: ulimit -c unlimited &info    1980/01/06 00:00:40.939664 [OTA]M=ota func:Settings_Load line:118 echo off: echo 1 > /proc/sys/kernel/printkinfo    1980/01/06 00:00:41.044256 [OTA]M=ota func:Settings_Load line:121 Settings load end
+info    1980/01/06 00:00:41.045660 [OTA]M=ota func:IPC_Load line:96 IPC load
+info    1980/01/06 00:00:41.046324 [OTA]M=ota func:IPC_ConnectRequest line:194 IPC connect request
+info    1980/01/06 00:00:41.046413 [OTA]M=ota func:wvdcmn_send_event line:838 send event,[01]->[03],procID=[0x00],datasize=[00]
+info    1980/01/06 00:00:41.046495 [OTA]M=ota func:wswcmn_del_timer line:484 del timer:2
+info    1980/01/06 00:00:41.046554 [OTA]M=ota func:wswcmn_set_timer line:408 set timerID:[2], interval:[1000]ms
+info    1980/01/06 00:00:41.046616 [OTA]M=ota func:IPC_Load line:104 IPC load end
+info    1980/01/06 00:00:41.047342 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x00]
+info    1980/01/06 00:00:41.047426 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x00]->[0x00]
+info    1980/01/06 00:00:41.047481 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x00],Stage=[0x00]
+info    1980/01/06 00:00:41.048949 [OTA]M=IPC_TX func:nubIPCConnectRetryInit line:1220 [PE]connect retry init
+info    1980/01/06 00:00:41.049032 [OTA]M=IPC_TX func:nubIPCInitSocket line:1252 [PE]init socket
+info    1980/01/06 00:00:41.049084 [OTA]M=IPC_TX func:Net_CreateSocket line:131 create socket...
+info    1980/01/06 00:00:41.049444 [OTA]M=IPC_TX func:Net_CreateSocket line:154 socket fd=[7], domain=[1]
+info    1980/01/06 00:00:41.049535 [OTA]M=IPC_TX func:nubIPCInitSocket line:1260 client socket=[7]
+info    1980/01/06 00:00:41.049593 [OTA]M=IPC_TX func:Net_BindSocket line:186 socket[7] bind address=[]
+info    1980/01/06 00:00:41.049664 [OTA]M=IPC_TX func:Net_BindSocket line:194 bind succeed!
+info    1980/01/06 00:00:41.049715 [OTA]M=IPC_TX func:nubIPCConnectServer line:1289 [PE]connect server,retrycount=[0]
+info    1980/01/06 00:00:41.050395 [OTA]M=IPC_TX func:Net_ConnectLocal line:345 connect local...
+info    1980/01/06 00:00:41.050503 [OTA]M=IPC_TX func:Net_ConnectLocal line:354 connecting... socketfd=[7],addr=[1][ECU_OTA_SERVER_MAGIC],addrlen=[23]
+info    1980/01/06 00:00:41.050583 [OTA]M=IPC_TX func:Net_ConnectLocal line:357 connect error[111][Connection refused]
+info    1980/01/06 00:00:41.050639 [OTA]M=IPC_TX func:nubIPCConnectResult line:1317 connect retry [0]
+info    1980/01/06 00:00:41.050695 [OTA]M=IPC_TX func:nubIPCConnectResult line:1328 [PE]connect result[3],ret=[0xfe]
+info    1980/01/06 00:00:41.050747 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:41.050800 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:00:47.313614 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa1]
+info    1980/01/06 00:00:47.313783 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa1]
+info    1980/01/06 00:00:47.313849 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:47.313910 [OTA]M=IPC_TX func:nubIPCConnectServer line:1289 [PE]connect server,retrycount=[1]
+info    1980/01/06 00:00:47.313965 [OTA]M=IPC_TX func:Net_ConnectLocal line:345 connect local...
+info    1980/01/06 00:00:47.314056 [OTA]M=IPC_TX func:Net_ConnectLocal line:354 connecting... socketfd=[7],addr=[1][ECU_OTA_SERVER_MAGIC],addrlen=[23]
+info    1980/01/06 00:00:47.314125 [OTA]M=IPC_TX func:Net_ConnectLocal line:357 connect error[111][Connection refused]
+info    1980/01/06 00:00:47.314181 [OTA]M=IPC_TX func:nubIPCConnectResult line:1317 connect retry [1]
+info    1980/01/06 00:00:47.314232 [OTA]M=IPC_TX func:nubIPCConnectResult line:1328 [PE]connect result[3],ret=[0xfe]
+info    1980/01/06 00:00:47.314285 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:47.314417 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:00:52.307112 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa1]
+info    1980/01/06 00:00:52.307274 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa1]
+info    1980/01/06 00:00:52.307339 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:52.307401 [OTA]M=IPC_TX func:nubIPCConnectServer line:1289 [PE]connect server,retrycount=[2]
+info    1980/01/06 00:00:52.307456 [OTA]M=IPC_TX func:Net_ConnectLocal line:345 connect local...
+info    1980/01/06 00:00:52.307552 [OTA]M=IPC_TX func:Net_ConnectLocal line:354 connecting... socketfd=[7],addr=[1][ECU_OTA_SERVER_MAGIC],addrlen=[23]
+info    1980/01/06 00:00:52.307624 [OTA]M=IPC_TX func:Net_ConnectLocal line:357 connect error[111][Connection refused]
+info    1980/01/06 00:00:52.307679 [OTA]M=IPC_TX func:nubIPCConnectResult line:1317 connect retry [2]
+info    1980/01/06 00:00:52.307729 [OTA]M=IPC_TX func:nubIPCConnectResult line:1328 [PE]connect result[3],ret=[0xfe]
+info    1980/01/06 00:00:52.307780 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:52.307831 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:00:57.313464 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa1]
+info    1980/01/06 00:00:57.313680 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa1]
+info    1980/01/06 00:00:57.313747 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:57.313809 [OTA]M=IPC_TX func:nubIPCConnectServer line:1289 [PE]connect server,retrycount=[3]
+info    1980/01/06 00:00:57.313864 [OTA]M=IPC_TX func:Net_ConnectLocal line:345 connect local...
+info    1980/01/06 00:00:57.313965 [OTA]M=IPC_TX func:Net_ConnectLocal line:354 connecting... socketfd=[7],addr=[1][ECU_OTA_SERVER_MAGIC],addrlen=[23]
+info    1980/01/06 00:00:57.314024 [OTA]M=IPC_TX func:Net_ConnectLocal line:364 connected! client socketfd=[7]##################
+info    1980/01/06 00:00:57.314078 [OTA]M=IPC_TX func:nubIPCConnectResult line:1328 [PE]connect result[2],ret=[0xfd]
+info    1980/01/06 00:00:57.317465 [OTA]M=IPC_TX func:nubIPCTboxInfoRetryInit line:1745 [PE]Tbox info retry init
+info    1980/01/06 00:00:57.317599 [OTA]M=IPC_TX func:nubIPCMakeTboxInfo line:1765 [PE]make Tbox info
+info    1980/01/06 00:00:57.318318 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x01],datalen=[0x0000],data=
+info    1980/01/06 00:00:57.318426 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:00:57.318487 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:00:57.318541 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546010000010d0a 
+info    1980/01/06 00:00:57.320456 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:00:57.320560 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:57.320625 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:00:57.709887 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[90],write index=[0]
+info    1980/01/06 00:00:57.709976 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[0],write @[90],power=[0]
+0d05460100510100190d004e455535373934393038303131363234340054475944313830343230303030340033353739343930383031313632343400383938363031313737333539323030313133303301302e393732000c0d0a 
+info    1980/01/06 00:00:57.710222 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0051],recv_size=[0x005a]
+info    1980/01/06 00:00:57.710286 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0100],size=[84]
+info    1980/01/06 00:00:57.710394 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:00:57.710458 [OTA]M=IPC_RX func:nuwIPCRecvTboxInfo line:786 recv Tbox info,datalen=[0x51],data=##################
+0100190d004e455535373934393038303131363234340054475944313830343230303030340033353739343930383031313632343400383938363031313737333539323030313133303301302e39373200 
+info    1980/01/06 00:00:57.710684 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+01 
+info    1980/01/06 00:00:57.710768 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    1980/01/06 00:00:57.710843 [OTA]M=IPC_RX func:Sys_Callback line:669 sys callback,id=[3],datalen=[81]
+0100190d004e455535373934393038303131363234340054475944313830343230303030340033353739343930383031313632343400383938363031313737333539323030313133303301302e39373200 
+info    1980/01/06 00:00:57.710982 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[02],procID=[0x83],datasize=[81]
+info    1980/01/06 00:00:57.711039 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[90]
+info    1980/01/06 00:00:57.711089 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[90],recv_size=[90],count=[0]
+info    1980/01/06 00:00:58.039945 [OTA]M=SYSMGR func:nswSysTboxInfoUpdate line:483 tbox info update
+crit    1980/01/06 00:00:58.040053 [OTA]M=SYSMGR func:Settings_VinNumberSet line:242 set vin=[NEU57949080116244]
+crit    1980/01/06 00:00:58.040115 [OTA]M=SYSMGR func:Settings_SnNumberSet line:283 set sn=[TGYD1804200004]
+info    1980/01/06 00:00:58.040171 [OTA]M=SYSMGR func:nswSysTboxInfoUpdate line:542 tbox info: power=[1],apn=[0],nettype=[25],signal=[13],usb connect=[0],vin=[NEU57949080116244],sn=[TGYD1804200004],imei=[357949080116244],iccid=[898601177359200113030.972],swver=[0.972]
+info    1980/01/06 00:00:58.040233 [OTA]M=SYSMGR func:Sys_Callback line:669 sys callback,id=[5],datalen=[1]
+01 
+crit    1980/01/06 00:00:58.040314 [OTA]M=SYSMGR func:Sys_Callback line:699 Power state=[1]
+info    1980/01/06 00:00:58.040369 [OTA]M=SYSMGR func:wvdcmn_send_event line:838 send event,[02]->[02],procID=[0x01],datasize=[01]
+info    1980/01/06 00:00:58.040875 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    1980/01/06 00:00:58.041000 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    1980/01/06 00:00:58.041061 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x01]
+info    1980/01/06 00:00:58.041119 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:58.041174 [OTA]M=IPC_TX func:nubIPCTboxInfoWaitAck line:1795 [PE]tbox info wait ack ok[0x80]
+info    1980/01/06 00:00:58.041226 [OTA]M=IPC_TX func:nubIPCTboxInfoWaitAck line:1819 [PE]Tbox info wait ack[0xfd]
+info    1980/01/06 00:00:58.041382 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    1980/01/06 00:00:58.041452 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:3
+info    1980/01/06 00:00:58.041508 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[3], interval:[90000]ms
+info    1980/01/06 00:00:58.041563 [OTA]M=IPC_TX func:nubIPCHeartbeatStart line:2032 [PE]heartbeat start[0xfd]
+info    1980/01/06 00:00:58.041621 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    1980/01/06 00:00:58.041674 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    1980/01/06 00:00:58.041725 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x00],Stage=[0x05]
+info    1980/01/06 00:00:58.041776 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    1980/01/06 00:00:58.041826 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    1980/01/06 00:00:58.041874 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    1980/01/06 00:00:58.041929 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:00:58.041978 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:00:58.042027 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    1980/01/06 00:00:58.046323 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:00:58.046419 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:58.046478 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:00:58.047713 [OTA]M=SYSMGR func:Cloud_Callback line:165 cloud callback,id=[1],datalen=[1]
+00 
+info    1980/01/06 00:00:58.379557 [OTA]M=SYSMGR func:wvdcmn_send_event line:838 send event,[02]->[06],procID=[0x81],datasize=[01]
+info    1980/01/06 00:00:58.379664 [OTA]M=SYSMGR func:IPC_Callback line:144 IPC callback,id=[4],datalen=[1]
+00 
+info    1980/01/06 00:00:58.379746 [OTA]M=SYSMGR func:wvdcmn_send_event line:838 send event,[02]->[03],procID=[0x83],datasize=[01]
+crit    1980/01/06 00:00:58.379807 [OTA]M=SYSMGR func:Settings_ConfigSave line:442 config save
+info    1980/01/06 00:00:58.379857 [OTA]M=SYSMGR func:Settings_WriteParam line:181 write param start
+info    1980/01/06 00:00:58.379915 [OTA]M=SYSMGR func:Json_CreateTboxConfig line:1496 create tbox cfg
+crit    1980/01/06 00:00:58.388823 [OTA]M=CLD_TX func:Pthread_CloudSend line:204 Cloud unload,recv event=[0x81]
+info    1980/01/06 00:00:58.389722 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x83]
+info    1980/01/06 00:00:58.389799 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x83]
+crit    1980/01/06 00:00:58.389862 [OTA]M=IPC_TX func:nswIPCUSBConnectUpdate line:358 USB Connect update=[0]
+info    1980/01/06 00:00:58.391627 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[90]
+info    1980/01/06 00:00:58.723185 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[90],write @[99],power=[1]
+0d0546000000000d0a 
+info    1980/01/06 00:00:58.723323 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    1980/01/06 00:00:58.723385 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    1980/01/06 00:00:58.723443 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:00:58.723496 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    1980/01/06 00:00:58.723546 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    1980/01/06 00:00:58.723622 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    1980/01/06 00:00:58.723701 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    1980/01/06 00:00:58.723753 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[99],recv_size=[9],count=[0]
+info    1980/01/06 00:00:58.723915 [OTA]M=SYSMGR func:Json_CreateTboxConfig line:1520 Json Print=[{"last_client_sync_time":0,"client_sync_interval":5,"client_sync_retry_max":1,"download_retry_interval":1,"download_retry_cnt":1,"install_retry_max":3,"vin":"NEU57949080116244","sn":"TGYD1804200004","usb_install_time":0,"ecu_flash_stage":0}]
+info    1980/01/06 00:00:58.724012 [OTA]M=SYSMGR func:wuwcmn_WriteFileData line:1151 write file data,offset=[0x0000],writesize=[0x00f0]@[/app/master.cfg]
+info    1980/01/06 00:00:58.725008 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    1980/01/06 00:00:58.725126 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    1980/01/06 00:00:58.725189 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    1980/01/06 00:00:58.725243 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:00:58.725300 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    1980/01/06 00:00:58.725351 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    1980/01/06 00:00:58.731933 [OTA]M=SYSMGR func:Settings_WriteParam line:189 write param end
+crit    1980/01/06 00:00:58.732069 [OTA]M=SYSMGR func:Pthread_SysManage line:150 ########################################System Wakeup,state=[1]
+info    1980/01/06 00:00:58.732197 [OTA]M=SYSMGR func:nswSysStandbyOut line:246 Sys standby out start
+crit    1980/01/06 00:00:58.732257 [OTA]M=SYSMGR func:Sys_StateSet line:592 OTA state set[2]
+info    1980/01/06 00:00:58.732309 [OTA]M=SYSMGR func:RPC_Load line:106 RPC load
+info    1980/01/06 00:00:58.741934 [OTA]M=SYSMGR func:RPC_Load line:122 RPC service ready=[1]
+info    1980/01/06 00:00:58.842237 [OTA]M=SYSMGR func:RPC_Load line:127 RPC service ready! version=[0.600]
+info    1980/01/06 00:00:58.842378 [OTA]M=SYSMGR func:RPC_Load line:128 ####################################
+info    1980/01/06 00:00:58.842436 [OTA]M=SYSMGR func:RPC_Load line:129 ####################################
+info    1980/01/06 00:00:58.842488 [OTA]M=SYSMGR func:RPC_Load line:130 ####################################
+info    1980/01/06 00:00:58.842537 [OTA]M=SYSMGR func:RPC_Load line:134 RPC load end
+crit    1980/01/06 00:00:58.842585 [OTA]M=SYSMGR func:MMC_CheckSDReadWrite line:233 check SD read write @[/media/card/][0]
+crit    1980/01/06 00:00:58.842649 [OTA]M=SYSMGR func:MMC_CheckSDReadWrite line:246 /media/card/ check finish!
+
+info    1980/01/06 00:00:58.843845 [OTA]M=SYSMGR func:CAN_Load line:127 CAN load
+info    1980/01/06 00:00:58.844736 [OTA]M=SYSMGR func:CAN_FlashStageSet line:986 flash stage set[0]##################
+info    1980/01/06 00:00:58.844840 [OTA]M=SYSMGR func:CAN_Load line:135 CAN load end
+info    1980/01/06 00:00:58.844899 [OTA]M=SYSMGR func:Cloud_Load line:110 Cloud load
+info    1980/01/06 00:00:59.207415 [OTA]M=SYSMGR func:Httpm_Init line:125 curl version=[7.50.1]
+info    1980/01/06 00:00:59.208651 [OTA]M=SYSMGR func:Httpm_Init line:146 httpm init=[0]
+info    1980/01/06 00:00:59.219756 [OTA]M=SYSMGR func:Json_Init line:208 CJSON Version=[1.6.0]
+info    1980/01/06 00:00:59.219888 [OTA]M=SYSMGR func:Json_Init line:210 json init=[0]
+info    1980/01/06 00:00:59.219959 [OTA]M=SYSMGR func:Cloud_Load line:121 Cloud load end
+info    1980/01/06 00:00:59.235612 [OTA]M=SYSMGR func:FEM_Init line:731 FEM init finish!
+crit    1980/01/06 00:00:59.235752 [OTA]M=SYSMGR func:Sys_StateSet line:592 OTA state set[3]
+info    1980/01/06 00:00:59.235813 [OTA]M=SYSMGR func:nswSysStandbyOut line:260 Sys standby out end
+crit    1980/01/06 00:00:59.235875 [OTA]M=SYSMGR func:nswSysClientSyncCalc line:322 Sys client sync interval=[300],last-time=[0],cur-time=[315964859]
+crit    1980/01/06 00:00:59.235930 [OTA]M=SYSMGR func:nswSysClientSyncCalc line:329 sub sec=[315964859],sync interval=[300]
+crit    1980/01/06 00:00:59.235984 [OTA]M=SYSMGR func:nswSysClientSyncRequest line:359 Sys client sync request,sys state=[3]
+info    1980/01/06 00:00:59.236034 [OTA]M=SYSMGR func:wswcmn_del_timer line:484 del timer:6
+crit    1980/01/06 00:00:59.236084 [OTA]M=SYSMGR func:nswSysClientSyncRequest line:369 ############################will NOT sync until ACC ON in current version!!!!!!!!!!!!!!!!!!!!!!!!!!!
+info    1980/01/06 00:00:59.307368 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0002],[0x5511]
+info    1980/01/06 00:00:59.316719 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+info    1980/01/06 00:00:59.347792 [OTA]M=ota func:RPC_DataHandler line:206 RPC data handler,length=[0x04],[0x0001]->[0x0083]
+550400f5 
+info    1980/01/06 00:00:59.347996 [OTA]M=ota func:RPC_DataHandler line:217 Proc_ID=[0x5504]
+info    1980/01/06 00:00:59.348113 [OTA]M=ota func:wswFEM_Callback line:2675 FEM callback,id=[1],datalen=[2]
+00f5 
+info    1980/01/06 00:00:59.348205 [OTA]M=ota func:wvdcmn_send_event line:838 send event,[01]->[07],procID=[0x81],datasize=[02]
+info    1980/01/06 00:00:59.350797 [OTA]M=FEM_RX func:Pthread_FEMRecv line:2198 FEM recv event=[0x81]
+info    1980/01/06 00:00:59.394332 [OTA]M=FEM_RX func:CAN_Callback line:174 CAN callback,id=[11],datalen=[0]##################
+info    1980/01/06 00:00:59.396246 [OTA]M=FEM_RX func:wvdcmn_send_event line:838 send event,[07]->[05],procID=[0x8a],datasize=[00]
+info    1980/01/06 00:00:59.406446 [OTA]M=CAN_TX func:Pthread_CAN line:1035 recv event=[0x8a]
+info    1980/01/06 00:00:59.406686 [OTA]M=CAN_TX func:nswCANRecvEventCheck line:965 Event to API:[0x8a]
+crit    1980/01/06 00:00:59.406756 [OTA]M=CAN_TX func:nswCANRecvAccOn line:243 recv acc on request!!![0]
+crit    1980/01/06 00:00:59.406814 [OTA]M=CAN_TX func:Cloud_ClientSyncRequest line:221 client sync after APN connect!!!
+info    1980/01/06 00:02:28.014707 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    1980/01/06 00:02:28.014993 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    1980/01/06 00:02:28.015062 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    1980/01/06 00:02:28.015126 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    1980/01/06 00:02:28.015192 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    1980/01/06 00:02:28.015246 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    1980/01/06 00:02:28.015299 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    1980/01/06 00:02:28.015401 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    1980/01/06 00:02:28.015458 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    1980/01/06 00:02:28.015509 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    1980/01/06 00:02:28.015567 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:02:28.015618 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:02:28.015670 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    1980/01/06 00:02:28.016997 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:02:28.017079 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:02:28.017141 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:02:28.366263 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[99]
+info    1980/01/06 00:02:28.366351 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[99],write @[108],power=[1]
+0d0546000000000d0a 
+info    1980/01/06 00:02:28.366456 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    1980/01/06 00:02:28.366518 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    1980/01/06 00:02:28.366574 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:02:28.366627 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    1980/01/06 00:02:28.366679 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    1980/01/06 00:02:28.366755 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    1980/01/06 00:02:28.366816 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    1980/01/06 00:02:28.366868 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[108],recv_size=[9],count=[0]
+info    1980/01/06 00:02:28.371317 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    1980/01/06 00:02:28.371450 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    1980/01/06 00:02:28.371515 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    1980/01/06 00:02:28.371574 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:02:28.371633 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    1980/01/06 00:02:28.371689 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    1980/01/06 00:03:58.009055 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    1980/01/06 00:03:58.009358 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    1980/01/06 00:03:58.009509 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    1980/01/06 00:03:58.009580 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    1980/01/06 00:03:58.009649 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    1980/01/06 00:03:58.009706 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    1980/01/06 00:03:58.009853 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    1980/01/06 00:03:58.009913 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    1980/01/06 00:03:58.009964 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    1980/01/06 00:03:58.010015 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    1980/01/06 00:03:58.010070 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:03:58.010121 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:03:58.010172 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    1980/01/06 00:03:58.011465 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:03:58.011553 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:03:58.011613 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:03:58.386346 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[108]
+info    1980/01/06 00:03:58.386439 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[108],write @[117],power=[1]
+0d0546000000000d0a 
+info    1980/01/06 00:03:58.386545 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    1980/01/06 00:03:58.386608 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    1980/01/06 00:03:58.386665 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:03:58.386717 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    1980/01/06 00:03:58.386768 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    1980/01/06 00:03:58.386846 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    1980/01/06 00:03:58.386907 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    1980/01/06 00:03:58.386959 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[117],recv_size=[9],count=[0]
+info    1980/01/06 00:03:58.395970 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    1980/01/06 00:03:58.396102 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    1980/01/06 00:03:58.396166 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    1980/01/06 00:03:58.396222 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:03:58.396280 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    1980/01/06 00:03:58.396389 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    1980/01/06 00:05:28.005000 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    1980/01/06 00:05:28.005180 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    1980/01/06 00:05:28.005244 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    1980/01/06 00:05:28.005305 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    1980/01/06 00:05:28.005371 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    1980/01/06 00:05:28.005474 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    1980/01/06 00:05:28.005638 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    1980/01/06 00:05:28.005706 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    1980/01/06 00:05:28.005760 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    1980/01/06 00:05:28.005812 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    1980/01/06 00:05:28.005868 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:05:28.005918 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:05:28.005970 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    1980/01/06 00:05:28.007433 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:05:28.007506 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:05:28.007564 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:05:28.346307 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[117]
+info    1980/01/06 00:05:28.346400 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[117],write @[126],power=[1]
+0d0546000000000d0a 
+info    1980/01/06 00:05:28.346505 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    1980/01/06 00:05:28.346567 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    1980/01/06 00:05:28.346623 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:05:28.346675 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    1980/01/06 00:05:28.346728 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    1980/01/06 00:05:28.346805 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    1980/01/06 00:05:28.346867 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    1980/01/06 00:05:28.346920 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[126],recv_size=[9],count=[0]
+info    1980/01/06 00:05:28.351411 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    1980/01/06 00:05:28.351548 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    1980/01/06 00:05:28.351611 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    1980/01/06 00:05:28.351672 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:05:28.351732 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    1980/01/06 00:05:28.351787 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    1980/01/06 00:06:58.007279 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    1980/01/06 00:06:58.007545 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    1980/01/06 00:06:58.007617 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    1980/01/06 00:06:58.007682 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    1980/01/06 00:06:58.007771 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    1980/01/06 00:06:58.007828 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    1980/01/06 00:06:58.007884 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    1980/01/06 00:06:58.007939 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    1980/01/06 00:06:58.007991 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    1980/01/06 00:06:58.008041 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    1980/01/06 00:06:58.008097 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:06:58.008264 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:06:58.008331 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    1980/01/06 00:06:58.009770 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:06:58.009858 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:06:58.009920 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:06:58.357499 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[126]
+info    1980/01/06 00:06:58.357592 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[126],write @[135],power=[1]
+0d0546000000000d0a 
+info    1980/01/06 00:06:58.357697 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    1980/01/06 00:06:58.357758 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    1980/01/06 00:06:58.357814 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:06:58.357866 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    1980/01/06 00:06:58.357918 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    1980/01/06 00:06:58.357997 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    1980/01/06 00:06:58.358060 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    1980/01/06 00:06:58.358112 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[135],recv_size=[9],count=[0]
+info    1980/01/06 00:06:58.364202 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    1980/01/06 00:06:58.364344 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    1980/01/06 00:06:58.364411 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    1980/01/06 00:06:58.364468 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:06:58.364526 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    1980/01/06 00:06:58.364581 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    1980/01/06 00:08:28.009921 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    1980/01/06 00:08:28.010207 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    1980/01/06 00:08:28.010275 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    1980/01/06 00:08:28.010335 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    1980/01/06 00:08:28.010401 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    1980/01/06 00:08:28.010455 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    1980/01/06 00:08:28.010508 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    1980/01/06 00:08:28.010562 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    1980/01/06 00:08:28.010615 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    1980/01/06 00:08:28.010666 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    1980/01/06 00:08:28.010723 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:08:28.010774 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:08:28.010827 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    1980/01/06 00:08:28.012308 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:08:28.012397 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:08:28.012461 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:08:28.368281 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[135]
+info    1980/01/06 00:08:28.368423 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[135],write @[144],power=[1]
+0d0546000000000d0a 
+info    1980/01/06 00:08:28.368527 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    1980/01/06 00:08:28.368591 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    1980/01/06 00:08:28.368646 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:08:28.368699 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    1980/01/06 00:08:28.368750 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    1980/01/06 00:08:28.368827 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    1980/01/06 00:08:28.368905 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    1980/01/06 00:08:28.368960 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[144],recv_size=[9],count=[0]
+info    1980/01/06 00:08:28.376680 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    1980/01/06 00:08:28.376813 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    1980/01/06 00:08:28.376877 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    1980/01/06 00:08:28.376933 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:08:28.376992 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    1980/01/06 00:08:28.377048 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    1980/01/06 00:08:42.411783 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[90],write index=[144]
+info    1980/01/06 00:08:42.411862 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[144],write @[234],power=[1]
+0d054604005101011908004e455535373934393038303131363234340054475944313830343230303030340033353739343930383031313632343400383938363031313737333539323030313133303301302e393732000d0d0a 
+info    1980/01/06 00:08:42.412029 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0051],recv_size=[0x005a]
+info    1980/01/06 00:08:42.412086 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0400],size=[84]
+info    1980/01/06 00:08:42.412143 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:08:42.412195 [OTA]M=IPC_RX func:nuwIPCRecvTboxStatus line:700 recv Tbox status,datalen=[0x51],data=##################
+01011908004e455535373934393038303131363234340054475944313830343230303030340033353739343930383031313632343400383938363031313737333539323030313133303301302e39373200 
+info    1980/01/06 00:08:42.412335 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[1],datalen=[1]
+04 
+info    1980/01/06 00:08:42.412412 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x81],datasize=[01]
+info    1980/01/06 00:08:42.747608 [OTA]M=IPC_RX func:Sys_Callback line:669 sys callback,id=[3],datalen=[81]
+01011908004e455535373934393038303131363234340054475944313830343230303030340033353739343930383031313632343400383938363031313737333539323030313133303301302e39373200 
+info    1980/01/06 00:08:42.747829 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[02],procID=[0x83],datasize=[81]
+info    1980/01/06 00:08:42.747902 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[90]
+info    1980/01/06 00:08:42.747959 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[234],recv_size=[90],count=[0]
+info    1980/01/06 00:08:42.751479 [OTA]M=SYSMGR func:nswSysTboxInfoUpdate line:483 tbox info update
+crit    1980/01/06 00:08:42.751624 [OTA]M=SYSMGR func:Settings_VinNumberSet line:242 set vin=[NEU57949080116244]
+crit    1980/01/06 00:08:42.751806 [OTA]M=SYSMGR func:Settings_SnNumberSet line:283 set sn=[TGYD1804200004]
+info    1980/01/06 00:08:42.751874 [OTA]M=SYSMGR func:nswSysTboxInfoUpdate line:542 tbox info: power=[1],apn=[1],nettype=[25],signal=[8],usb connect=[0],vin=[NEU57949080116244],sn=[TGYD1804200004],imei=[357949080116244],iccid=[898601177359200113030.972],swver=[0.972]
+info    1980/01/06 00:08:42.751940 [OTA]M=SYSMGR func:Sys_Callback line:669 sys callback,id=[5],datalen=[1]
+01 
+crit    1980/01/06 00:08:42.752024 [OTA]M=SYSMGR func:Sys_Callback line:699 Power state=[1]
+info    1980/01/06 00:08:42.752082 [OTA]M=SYSMGR func:wvdcmn_send_event line:838 send event,[02]->[02],procID=[0x01],datasize=[01]
+info    1980/01/06 00:08:42.752160 [OTA]M=SYSMGR func:Cloud_Callback line:165 cloud callback,id=[1],datalen=[1]
+01 
+info    1980/01/06 00:08:42.752242 [OTA]M=SYSMGR func:wvdcmn_send_event line:838 send event,[02]->[06],procID=[0x81],datasize=[01]
+info    1980/01/06 00:08:42.752301 [OTA]M=SYSMGR func:IPC_Callback line:144 IPC callback,id=[4],datalen=[1]
+00 
+info    1980/01/06 00:08:42.752379 [OTA]M=SYSMGR func:wvdcmn_send_event line:838 send event,[02]->[03],procID=[0x83],datasize=[01]
+crit    1980/01/06 00:08:42.752437 [OTA]M=SYSMGR func:Settings_ConfigSave line:442 config save
+info    1980/01/06 00:08:42.752488 [OTA]M=SYSMGR func:Settings_WriteParam line:181 write param start
+info    1980/01/06 00:08:42.752542 [OTA]M=SYSMGR func:Json_CreateTboxConfig line:1496 create tbox cfg
+info    1980/01/06 00:08:42.752738 [OTA]M=SYSMGR func:Json_CreateTboxConfig line:1520 Json Print=[{"last_client_sync_time":0,"client_sync_interval":5,"client_sync_retry_max":1,"download_retry_interval":1,"download_retry_cnt":1,"install_retry_max":3,"vin":"NEU57949080116244","sn":"TGYD1804200004","usb_install_time":0,"ecu_flash_stage":0}]
+info    1980/01/06 00:08:42.752818 [OTA]M=SYSMGR func:wuwcmn_WriteFileData line:1151 write file data,offset=[0x0000],writesize=[0x00f0]@[/app/master.cfg]
+info    1980/01/06 00:08:42.753373 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x81]
+info    1980/01/06 00:08:42.753477 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x81]->[0x03]
+info    1980/01/06 00:08:42.753539 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    1980/01/06 00:08:42.753598 [OTA]M=IPC_TX func:nubIPCSendAckRetryInit line:1499 [PE]send ACK retry init
+info    1980/01/06 00:08:42.753651 [OTA]M=IPC_TX func:nubIPCMakeAck line:1521 [PE]make ack,cmd=[0x04]
+info    1980/01/06 00:08:42.753703 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x04],datalen=[0x0000],data=
+info    1980/01/06 00:08:42.753759 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:08:42.753810 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:08:43.086504 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546040000040d0a 
+info    1980/01/06 00:08:43.086819 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:08:43.086902 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x83]
+info    1980/01/06 00:08:43.086960 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x83]
+crit    1980/01/06 00:08:43.087014 [OTA]M=IPC_TX func:nswIPCUSBConnectUpdate line:358 USB Connect update=[0]
+info    1980/01/06 00:08:43.087158 [OTA]M=SYSMGR func:Settings_WriteParam line:189 write param end
+crit    1980/01/06 00:08:43.087246 [OTA]M=SYSMGR func:Pthread_SysManage line:155 System state [3],no need wakeup
+info    1980/01/06 00:08:43.088527 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0x81]
+crit    1980/01/06 00:08:43.088609 [OTA]M=CLD_TX func:nswCloudApnStatusUpdate line:344 APN status update=[1]
+crit    1980/01/06 00:08:43.088669 [OTA]M=CLD_TX func:nswCloudApnStatusUpdate line:346 ######################################################################## APN CONNECTED
+crit    1980/01/06 00:08:43.088725 [OTA]M=CLD_TX func:nswCloudApnStatusUpdate line:352 APN connected, client sync start...
+info    1980/01/06 00:08:43.088879 [OTA]M=CLD_TX func:wvdcmn_send_event line:838 send event,[06]->[06],procID=[0x00],datasize=[00]
+info    1980/01/06 00:08:43.088963 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0x00]
+info    1980/01/06 00:08:43.089022 [OTA]M=CLD_TX func:nswCloudProcessRun line:599 process run,PID=[0x00],Stage=[0x00]
+info    1980/01/06 00:08:43.089081 [OTA]M=CLD_TX func:nubCloudClientSyncRetryInit line:2189 [PE]client sync retry init,retry max=[1]
+crit    1980/01/06 00:08:43.089237 [OTA]M=CLD_TX func:Sys_StateSet line:592 OTA state set[4]
+info    1980/01/06 00:08:43.092296 [OTA]M=CLD_TX func:nubCloudLoginRetryInit line:944 [PE]login retry init
+info    1980/01/06 00:08:43.093002 [OTA]M=CLD_TX func:Cloud_TokenSet line:613 token set[]
+info    1980/01/06 00:08:43.094044 [OTA]M=CLD_TX func:nubCloudMakeRetryInit line:672 [PE]make data retry init
+info    1980/01/06 00:08:43.425441 [OTA]M=CLD_TX func:nswCloudGetUrl line:579 cmd [0] url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:08:43.437889 [OTA]M=CLD_TX func:CreateLogin line:1074 create login
+info    1980/01/06 00:08:43.438075 [OTA]M=CLD_TX func:CreateLogin line:1099 Json Print=[{"vin":"NEU57949080116244"}]
+info    1980/01/06 00:08:43.438152 [OTA]M=CLD_TX func:nubCloudCreateJson line:734 [PE]create json,ret=[0xfd],len=[27][27]
+info    1980/01/06 00:08:43.438214 [OTA]M=CLD_TX func:nubCloudSendRetryInit line:779 [PE]send retry init
+info    1980/01/06 00:08:43.439103 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[27],url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:08:43.439998 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/login],size=[27],data={"vin":"NEU57949080116244"}
+crit    1980/01/06 00:08:43.449307 [OTA]M=CLD_TX func:Cloud_TokenGet line:640 token get failed,NOT login
+info    1980/01/06 00:08:43.450125 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=1980010600084300001,count update=[2]
+info    1980/01/06 00:08:43.455130 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 1980010600084300001
+info    1980/01/06 00:08:43.471156 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    1980/01/06 00:08:53.511291 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+info    1980/01/06 00:08:53.511469 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:916 [PE]send retry [00]
+info    1980/01/06 00:08:53.511536 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfd]
+info    1980/01/06 00:08:53.511593 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:08:53.511651 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:08:54.507731 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:08:54.507919 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:08:54.507989 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:08:54.508052 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[27],url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:08:54.508110 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/login],size=[27],data={"vin":"NEU57949080116244"}
+crit    1980/01/06 00:08:54.508166 [OTA]M=CLD_TX func:Cloud_TokenGet line:640 token get failed,NOT login
+info    1980/01/06 00:08:54.508230 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=1980010600085400002,count update=[3]
+info    1980/01/06 00:08:54.508290 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 1980010600085400002
+info    1980/01/06 00:08:54.508837 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    1980/01/06 00:09:04.510996 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+crit    1980/01/06 00:09:04.511479 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:921 [PE]send retry retry max
+info    1980/01/06 00:09:04.511555 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfe]
+info    1980/01/06 00:09:04.511620 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:04.511679 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:09:05.512942 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:09:05.513124 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:09:05.513193 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:05.513252 [OTA]M=CLD_TX func:nubCloudLoginRetryCheck line:1007 [PE]login retry [00]
+info    1980/01/06 00:09:05.513307 [OTA]M=CLD_TX func:nubCloudLoginRetryCheck line:1017 [PE]longin retry check[0xfd]
+info    1980/01/06 00:09:05.513361 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:05.513414 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:09:06.505086 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:09:06.505267 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:09:06.505333 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:06.505394 [OTA]M=CLD_TX func:nubCloudMakeRetryInit line:672 [PE]make data retry init
+info    1980/01/06 00:09:06.505459 [OTA]M=CLD_TX func:nswCloudGetUrl line:579 cmd [0] url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:09:06.505516 [OTA]M=CLD_TX func:CreateLogin line:1074 create login
+info    1980/01/06 00:09:06.505659 [OTA]M=CLD_TX func:CreateLogin line:1099 Json Print=[{"vin":"NEU57949080116244"}]
+info    1980/01/06 00:09:06.505720 [OTA]M=CLD_TX func:nubCloudCreateJson line:734 [PE]create json,ret=[0xfd],len=[27][27]
+info    1980/01/06 00:09:06.505776 [OTA]M=CLD_TX func:nubCloudSendRetryInit line:779 [PE]send retry init
+info    1980/01/06 00:09:06.506514 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[27],url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:09:06.506592 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/login],size=[27],data={"vin":"NEU57949080116244"}
+crit    1980/01/06 00:09:06.506654 [OTA]M=CLD_TX func:Cloud_TokenGet line:640 token get failed,NOT login
+info    1980/01/06 00:09:06.506719 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=1980010600090600003,count update=[4]
+info    1980/01/06 00:09:06.506776 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 1980010600090600003
+info    1980/01/06 00:09:06.507313 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    1980/01/06 00:09:16.508893 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+info    1980/01/06 00:09:16.509077 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:916 [PE]send retry [00]
+info    1980/01/06 00:09:16.509252 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfd]
+info    1980/01/06 00:09:16.509320 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:16.509379 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:09:17.510129 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:09:17.510321 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:09:17.510389 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:17.510448 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[27],url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:09:17.510505 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/login],size=[27],data={"vin":"NEU57949080116244"}
+crit    1980/01/06 00:09:17.510683 [OTA]M=CLD_TX func:Cloud_TokenGet line:640 token get failed,NOT login
+info    1980/01/06 00:09:17.510758 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=1980010600091700004,count update=[5]
+info    1980/01/06 00:09:17.510819 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 1980010600091700004
+info    1980/01/06 00:09:17.511464 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    1980/01/06 00:09:27.513123 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+crit    1980/01/06 00:09:27.513314 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:921 [PE]send retry retry max
+info    1980/01/06 00:09:27.513384 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfe]
+info    1980/01/06 00:09:27.513443 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:27.513501 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:09:28.509425 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:09:28.509657 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:09:28.509730 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+crit    1980/01/06 00:09:28.509796 [OTA]M=CLD_TX func:nubCloudLoginRetryCheck line:1012 [PE]login retry max
+info    1980/01/06 00:09:28.509853 [OTA]M=CLD_TX func:nubCloudLoginRetryCheck line:1017 [PE]longin retry check[0xfe]
+info    1980/01/06 00:09:28.509920 [OTA]M=CLD_TX func:nubCloudClientSyncResult line:2214 [PE]client sync retry [00]
+info    1980/01/06 00:09:28.510021 [OTA]M=CLD_TX func:nubCloudClientSyncResult line:2225 [PE]client sync result[0xfe]
+info    1980/01/06 00:09:28.510079 [OTA]M=CLD_TX func:nubCloudLoginRetryInit line:944 [PE]login retry init
+info    1980/01/06 00:09:28.510132 [OTA]M=CLD_TX func:Cloud_TokenSet line:613 token set[]
+info    1980/01/06 00:09:28.510182 [OTA]M=CLD_TX func:nubCloudMakeRetryInit line:672 [PE]make data retry init
+info    1980/01/06 00:09:28.510241 [OTA]M=CLD_TX func:nswCloudGetUrl line:579 cmd [0] url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:09:28.510298 [OTA]M=CLD_TX func:CreateLogin line:1074 create login
+info    1980/01/06 00:09:28.510386 [OTA]M=CLD_TX func:CreateLogin line:1099 Json Print=[{"vin":"NEU57949080116244"}]
+info    1980/01/06 00:09:28.510445 [OTA]M=CLD_TX func:nubCloudCreateJson line:734 [PE]create json,ret=[0xfd],len=[27][27]
+info    1980/01/06 00:09:28.510500 [OTA]M=CLD_TX func:nubCloudSendRetryInit line:779 [PE]send retry init
+info    1980/01/06 00:09:28.511118 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[27],url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:09:28.511174 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/login],size=[27],data={"vin":"NEU57949080116244"}
+crit    1980/01/06 00:09:28.511231 [OTA]M=CLD_TX func:Cloud_TokenGet line:640 token get failed,NOT login
+info    1980/01/06 00:09:28.511295 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=1980010600092800005,count update=[6]
+info    1980/01/06 00:09:28.511352 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 1980010600092800005
+info    1980/01/06 00:09:28.511916 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    1980/01/06 00:09:38.513471 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+info    1980/01/06 00:09:38.513657 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:916 [PE]send retry [00]
+info    1980/01/06 00:09:38.513725 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfd]
+info    1980/01/06 00:09:38.513786 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:38.513842 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:09:39.509863 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:09:39.510153 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:09:39.510231 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:39.510297 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[27],url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:09:39.510355 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/login],size=[27],data={"vin":"NEU57949080116244"}
+crit    1980/01/06 00:09:39.510413 [OTA]M=CLD_TX func:Cloud_TokenGet line:640 token get failed,NOT login
+info    1980/01/06 00:09:39.510477 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=1980010600093900006,count update=[7]
+info    1980/01/06 00:09:39.510536 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 1980010600093900006
+info    1980/01/06 00:09:39.511191 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    1980/01/06 00:09:49.512373 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+crit    1980/01/06 00:09:49.512558 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:921 [PE]send retry retry max
+info    1980/01/06 00:09:49.512626 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfe]
+info    1980/01/06 00:09:49.512685 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:49.512740 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:09:50.506696 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:09:50.506884 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:09:50.506951 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:50.507013 [OTA]M=CLD_TX func:nubCloudLoginRetryCheck line:1007 [PE]login retry [00]
+info    1980/01/06 00:09:50.507069 [OTA]M=CLD_TX func:nubCloudLoginRetryCheck line:1017 [PE]longin retry check[0xfd]
+info    1980/01/06 00:09:50.507123 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:50.507177 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:09:51.512691 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:09:51.512870 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:09:51.512934 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:51.512998 [OTA]M=CLD_TX func:nubCloudMakeRetryInit line:672 [PE]make data retry init
+info    1980/01/06 00:09:51.513065 [OTA]M=CLD_TX func:nswCloudGetUrl line:579 cmd [0] url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:09:51.513126 [OTA]M=CLD_TX func:CreateLogin line:1074 create login
+info    1980/01/06 00:09:51.513216 [OTA]M=CLD_TX func:CreateLogin line:1099 Json Print=[{"vin":"NEU57949080116244"}]
+info    1980/01/06 00:09:51.513280 [OTA]M=CLD_TX func:nubCloudCreateJson line:734 [PE]create json,ret=[0xfd],len=[27][27]
+info    1980/01/06 00:09:51.513336 [OTA]M=CLD_TX func:nubCloudSendRetryInit line:779 [PE]send retry init
+info    1980/01/06 00:09:51.514069 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[27],url=[http://59.46.220.224:30052/ota/v1/login]
+info    1980/01/06 00:09:51.514149 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/login],size=[27],data={"vin":"NEU57949080116244"}
+crit    1980/01/06 00:09:51.514209 [OTA]M=CLD_TX func:Cloud_TokenGet line:640 token get failed,NOT login
+info    1980/01/06 00:09:51.514274 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=1980010600095100007,count update=[8]
+info    1980/01/06 00:09:51.514331 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 1980010600095100007
+info    1980/01/06 00:09:51.514991 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    1980/01/06 00:09:56.376709 [OTA]M=CLD_TX func:write_callback line:700 write callback recv size=[326],data=
+{"body":{"token":"eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw"},"header":{"code":"200","msg":"success","requestId":"1980010600095100007","time":"1534322755780"}}
+info    1980/01/06 00:09:56.376978 [OTA]M=CLD_TX func:Httpm_Post line:273 [326] bytes received.
+crit    1980/01/06 00:09:56.377075 [OTA]M=CLD_TX func:Httpm_Post line:276 http1 response code=[200]
+info    1980/01/06 00:09:56.377143 [OTA]M=CLD_TX func:nubCloudWaitHttpRsp line:837 [PE]http1 response code=[200] head size=[303],data=
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Content-Length: 326
+Date: Wed, 15 Aug 2018 08:45:55 GMT
+
+
+info    1980/01/06 00:09:56.377238 [OTA]M=CLD_TX func:nubCloudWaitHttpRsp line:848 [PE]wait http1 response[0xfd],recv size=[326]
+info    1980/01/06 00:09:56.377296 [OTA]M=CLD_TX func:Json_ParseHeader line:246 json parse header start,cmd=[0]
+info    1980/01/06 00:09:56.377414 [OTA]M=CLD_TX func:Json_ParseHeader line:275 code=[200],strcode=[200]
+info    1980/01/06 00:09:56.377478 [OTA]M=CLD_TX func:Json_ParseHeader line:284 json delete
+info    1980/01/06 00:09:56.377528 [OTA]M=CLD_TX func:Json_ParseHeader line:287 json parse header end
+info    1980/01/06 00:09:56.377578 [OTA]M=CLD_TX func:nubCloudCheckMsgHeader line:875 [PE]msg header check,code=[200],PID=[0x04]
+info    1980/01/06 00:09:56.377629 [OTA]M=CLD_TX func:nubCloudCheckMsgHeader line:881 [PE]msg header response success!
+info    1980/01/06 00:09:56.377678 [OTA]M=CLD_TX func:nubCloudCheckMsgHeader line:898 [PE]msg header check result=[0xfd]
+info    1980/01/06 00:09:56.377732 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:56.377785 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:09:57.358255 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:09:57.358435 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:09:57.358499 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:09:57.358563 [OTA]M=CLD_TX func:Json_ParseBody line:307 json parse body start
+info    1980/01/06 00:09:57.361805 [OTA]M=CLD_TX func:ParseLogin line:822 parse login...
+info    1980/01/06 00:09:57.361973 [OTA]M=CLD_TX func:Cloud_TokenSet line:613 token set[eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw]
+info    1980/01/06 00:09:57.362040 [OTA]M=CLD_TX func:Json_ParseBody line:351 json delete
+info    1980/01/06 00:09:57.362091 [OTA]M=CLD_TX func:Json_ParseBody line:354 json parse body end
+info    1980/01/06 00:09:57.362146 [OTA]M=CLD_TX func:nubCloudLoginResult line:973 [PE]parse login success!
+info    1980/01/06 00:09:57.362197 [OTA]M=CLD_TX func:nubCloudLoginResult line:989 [PE]login result[0xfd]
+crit    1980/01/06 00:09:57.362249 [OTA]M=CLD_TX func:nubCloudNeedActiveJudge line:1067 [PE]login succeed, NO Need active![200]##################
+info    1980/01/06 00:09:57.362299 [OTA]M=CLD_TX func:nubCloudNeedActiveJudge line:1071 [PE]need active judge result[0xfd]
+info    1980/01/06 00:09:57.363457 [OTA]M=CLD_TX func:nubCloudGetEcuRetryInit line:1171 [PE]get ecu retry init
+info    1980/01/06 00:09:57.363624 [OTA]M=CLD_TX func:nubCloudMakeRetryInit line:672 [PE]make data retry init
+info    1980/01/06 00:09:57.363702 [OTA]M=CLD_TX func:nswCloudGetUrl line:579 cmd [2] url=[http://59.46.220.224:30052/ota/v1/getEcuTarget]
+crit    1980/01/06 00:09:57.363764 [OTA]M=CLD_TX func:Json_Create line:396 cmd_id=[2],NO NEED Create Json
+info    1980/01/06 00:09:57.363912 [OTA]M=CLD_TX func:nubCloudCreateJson line:734 [PE]create json,ret=[0xfd],len=[0][0]
+info    1980/01/06 00:09:57.363976 [OTA]M=CLD_TX func:nubCloudSendRetryInit line:779 [PE]send retry init
+info    1980/01/06 00:09:57.364550 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[0],url=[http://59.46.220.224:30052/ota/v1/getEcuTarget]
+info    1980/01/06 00:09:57.364608 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/getEcuTarget],size=[0],data=
+info    1980/01/06 00:09:57.366463 [OTA]M=CLD_TX func:Cloud_TokenGet line:637 token get[eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw]
+info    1980/01/06 00:09:57.366547 [OTA]M=CLD_TX func:Httpm_Post line:220 http1 header add custom header,token=token: eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw
+info    1980/01/06 00:09:57.366620 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=1980010600095700008,count update=[9]
+info    1980/01/06 00:09:57.366674 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 1980010600095700008
+info    1980/01/06 00:09:57.367361 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    1980/01/06 00:09:58.011990 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    1980/01/06 00:09:58.012256 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    1980/01/06 00:09:58.012327 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    1980/01/06 00:09:58.012386 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    1980/01/06 00:09:58.012452 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    1980/01/06 00:09:58.012506 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    1980/01/06 00:09:58.012559 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x03],Stage=[0x02]
+info    1980/01/06 00:09:58.012615 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    1980/01/06 00:09:58.012667 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    1980/01/06 00:09:58.012717 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    1980/01/06 00:09:58.012772 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    1980/01/06 00:09:58.012823 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    1980/01/06 00:09:58.012874 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    1980/01/06 00:09:58.012987 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    1980/01/06 00:09:58.013044 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:09:58.013098 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    1980/01/06 00:09:58.092889 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[234]
+info    1980/01/06 00:09:58.422986 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[234],write @[243],power=[1]
+0d0546000000000d0a 
+info    1980/01/06 00:09:58.423159 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    1980/01/06 00:09:58.423227 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    1980/01/06 00:09:58.423284 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    1980/01/06 00:09:58.423336 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    1980/01/06 00:09:58.423387 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    1980/01/06 00:09:58.423580 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    1980/01/06 00:09:58.423711 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    1980/01/06 00:09:58.423768 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[243],recv_size=[9],count=[0]
+info    1980/01/06 00:09:58.428028 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    1980/01/06 00:09:58.428126 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    1980/01/06 00:09:58.428191 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    1980/01/06 00:09:58.428245 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    1980/01/06 00:09:58.428359 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    1980/01/06 00:09:58.428415 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    1980/01/06 00:10:07.315980 [OTA]M=CLD_TX func:write_callback line:700 write callback recv size=[2706],data=
+{"body":{"server_versionId":"955E87740FAC9D4EAD28BFE96F77FD77","ecuList":[{"ecu_addr":"7A1","didList":[{"ecu_did":"F195","version":"2.4"},{"ecu_did":"F18A","version":"123014"},{"ecu_did":"F187","version":"01740106"}]},{"ecu_addr":"7A0","didList":[{"ecu_did":"F195","version":"0.972"},{"ecu_did":"F18A","version":"0.972"},{"ecu_did":"F187","version":"0.972"}]},{"ecu_addr":"7B1","didList":[{"ecu_did":"F195","version":"S00BMU0H22V11718"},{"ecu_did":"F18A","version":"593001"},{"ecu_did":"F187","version":"01640296"}]},{"ecu_addr":"794","didList":[{"ecu_did":"F195","version":"GE12_EGSM_C.06"},{"ecu_did":"F18A","version":"210288"},{"ecu_did":"F187","version":"01430494"}]},{"ecu_addr":"7B5","didList":[{"ecu_did":"F195","version":"6211"},{"ecu_did":"F18A","version":"210468"},{"ecu_did":"F187","version":"06633789"}]},{"ecu_addr":"734","didList":[{"ecu_did":"F195","version":"F01R0A7176"},{"ecu_did":"F18A","version":"210044"},{"ecu_did":"F187","version":"01640037"}]},{"ecu_addr":"7B0","didList":[{"ecu_did":"F195","version":"GE1200C30T180302"},{"ecu_did":"F18A","version":"992031"},{"ecu_did":"F187","version":"01430267"}]},{"ecu_addr":"740","didList":[{"ecu_did":"F195","version":"05_00_01"},{"ecu_did":"F18A","version":"100046"},{"ecu_did":"F187","version":"06633665"}]},{"ecu_addr":"744","didList":[{"ecu_did":"F195","version":"V1.9"},{"ecu_did":"F18A","version":"220160"},{"ecu_did":"F187","version":"01430227"}]},{"ecu_addr":"7C6","didList":[{"ecu_did":"F195","version":"D1.02"},{"ecu_did":"F18A","version":"752003"},{"ecu_did":"F187","version":"01620361"}]},{"ecu_addr":"7E2","didList":[{"ecu_did":"F195","version":"6.05"},{"ecu_did":"F18A","version":"210304"},{"ecu_did":"F187","version":"01430450"}]},{"ecu_addr":"795","didList":[{"ecu_did":"F195","version":"201804120C10"},{"ecu_did":"F18A","version":"431031"},{"ecu_did":"F187","version":"01729811"}]},{"ecu_addr":"783","didList":[{"ecu_did":"F195","version":"1.70"},{"ecu_did":"F18A","version":"100057"},{"ecu_did":"F187","version":"6600107442"}]},{"ecu_addr":"7E4","didList":[{"ecu_did":"F195","version":"13140348"},{"ecu_did":"F18A","version":"512013"},{"ecu_did":"F187","version":"6600072100"}]},{"ecu_addr":"7E3","didList":[{"ecu_did":"F195","version":"3018"},{"ecu_did":"F18A","version":"451003"},{"ecu_did":"F187","version":"01737506"}]},{"ecu_addr":"745","didList":[{"ecu_did":"F195","version":"MCU0.21SOC0.82"},{"ecu_did":"F18A","version":"123014"},{"ecu_did":"F187","version":"01740108"}]},{"ecu_addr":"7A7","didList":[{"ecu_did":"F195","version":"V1.60"},{"ecu_did":"F18A","version":"290004"},{"ecu_did":"F187","version":"01430447"}]}]},"header":{"code":"200","msg":"success","requestId":"1980010600095700008","time":"1534322766880"}}
+info    1980/01/06 00:10:07.316531 [OTA]M=CLD_TX func:Httpm_Post line:273 [2706] bytes received.
+crit    1980/01/06 00:10:07.316615 [OTA]M=CLD_TX func:Httpm_Post line:276 http1 response code=[200]
+info    1980/01/06 00:10:07.316683 [OTA]M=CLD_TX func:nubCloudWaitHttpRsp line:837 [PE]http1 response code=[200] head size=[420],data=
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=F22FC2A27D138FDDBD5E99914DA2A370; Path=/; HttpOnly
+X-Application-Context: application:9050
+Content-Type: application/json;charset=UTF-8
+Content-Length: 2706
+Date: Wed, 15 Aug 2018 08:46:05 GMT
+
+
+info    1980/01/06 00:10:07.316894 [OTA]M=CLD_TX func:nubCloudWaitHttpRsp line:848 [PE]wait http1 response[0xfd],recv size=[2706]
+info    1980/01/06 00:10:07.316963 [OTA]M=CLD_TX func:Json_ParseHeader line:246 json parse header start,cmd=[0]
+info    1980/01/06 00:10:07.317494 [OTA]M=CLD_TX func:Json_ParseHeader line:275 code=[200],strcode=[200]
+info    1980/01/06 00:10:07.317568 [OTA]M=CLD_TX func:Json_ParseHeader line:284 json delete
+info    1980/01/06 00:10:07.317622 [OTA]M=CLD_TX func:Json_ParseHeader line:287 json parse header end
+info    1980/01/06 00:10:07.317671 [OTA]M=CLD_TX func:nubCloudCheckMsgHeader line:875 [PE]msg header check,code=[200],PID=[0x04]
+info    1980/01/06 00:10:07.648348 [OTA]M=CLD_TX func:nubCloudCheckMsgHeader line:881 [PE]msg header response success!
+info    1980/01/06 00:10:07.648468 [OTA]M=CLD_TX func:nubCloudCheckMsgHeader line:898 [PE]msg header check result=[0xfd]
+info    1980/01/06 00:10:07.648531 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:10:07.648596 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    1980/01/06 00:10:08.608591 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    1980/01/06 00:10:08.608781 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    1980/01/06 00:10:08.608848 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    1980/01/06 00:10:08.608914 [OTA]M=CLD_TX func:Json_ParseBody line:307 json parse body start
+info    1980/01/06 00:10:08.609806 [OTA]M=CLD_TX func:ParseEcuTarget line:847 parse ecu target...
+info    1980/01/06 00:10:08.609924 [OTA]M=CLD_TX func:GetValueEcuList line:616 get value Ecu List
+info    1980/01/06 00:10:08.609992 [OTA]M=CLD_TX func:GetValueEcuList line:633 ecu count=[17]
+info    1980/01/06 00:10:08.610062 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 0 addr=[7A1],did count=[3],did0=[F195],ver=[2.4],did1=[F18A],ver=[123014],did2=[F187],ver=[01740106]
+info    1980/01/06 00:10:08.610134 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 1 addr=[7A0],did count=[3],did0=[F195],ver=[0.972],did1=[F18A],ver=[0.972],did2=[F187],ver=[0.972]
+info    1980/01/06 00:10:08.610201 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 2 addr=[7B1],did count=[3],did0=[F195],ver=[S00BMU0H22V11718],did1=[F18A],ver=[593001],did2=[F187],ver=[01640296]
+info    1980/01/06 00:10:08.610267 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 3 addr=[794],did count=[3],did0=[F195],ver=[GE12_EGSM_C.06],did1=[F18A],ver=[210288],did2=[F187],ver=[01430494]
+info    1980/01/06 00:10:08.610331 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 4 addr=[7B5],did count=[3],did0=[F195],ver=[6211],did1=[F18A],ver=[210468],did2=[F187],ver=[06633789]
+info    1980/01/06 00:10:08.610395 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 5 addr=[734],did count=[3],did0=[F195],ver=[F01R0A7176],did1=[F18A],ver=[210044],did2=[F187],ver=[01640037]
+info    1980/01/06 00:10:08.610459 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 6 addr=[7B0],did count=[3],did0=[F195],ver=[GE1200C30T180302],did1=[F18A],ver=[992031],did2=[F187],ver=[01430267]
+info    1980/01/06 00:10:08.610524 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 7 addr=[740],did count=[3],did0=[F195],ver=[05_00_01],did1=[F18A],ver=[100046],did2=[F187],ver=[06633665]
+info    1980/01/06 00:10:08.610587 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 8 addr=[744],did count=[3],did0=[F195],ver=[V1.9],did1=[F18A],ver=[220160],did2=[F187],ver=[01430227]
+info    1980/01/06 00:10:08.610649 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 9 addr=[7C6],did count=[3],did0=[F195],ver=[D1.02],did1=[F18A],ver=[752003],did2=[F187],ver=[01620361]
+info    1980/01/06 00:10:08.610812 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 10 addr=[7E2],did count=[3],did0=[F195],ver=[6.05],did1=[F18A],ver=[210304],did2=[F187],ver=[01430450]
+info    1980/01/06 00:10:08.610887 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 11 addr=[795],did count=[3],did0=[F195],ver=[201804120C10],did1=[F18A],ver=[431031],did2=[F187],ver=[01729811]
+info    1980/01/06 00:10:08.610958 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 12 addr=[783],did count=[3],did0=[F195],ver=[1.70],did1=[F18A],ver=[100057],did2=[F187],ver=[6600107442]
+info    1980/01/06 00:10:08.611022 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 13 addr=[7E4],did count=[3],did0=[F195],ver=[13140348],did1=[F18A],ver=[512013],did2=[F187],ver=[6600072100]
+info    1980/01/06 00:10:08.611087 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 14 addr=[7E3],did count=[3],did0=[F195],ver=[3018],did1=[F18A],ver=[451003],did2=[F187],ver=[01737506]
+info    1980/01/06 00:10:08.611151 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 15 addr=[745],did count=[3],did0=[F195],ver=[MCU0.21SOC0.82],did1=[F18A],ver=[123014],did2=[F187],ver=[01740108]
+info    1980/01/06 00:10:08.611217 [OTA]M=CLD_TX func:GetValueEcuList line:671 ecu 16 addr=[7A7],did count=[3],did0=[F195],ver=[V1.60],did1=[F18A],ver=[290004],did2=[F187],ver=[01430447]
+info    1980/01/06 00:10:08.617238 [OTA]M=CLD_TX func:Cloud_ServerVersionCheck line:485 server version check
+info    1980/01/06 00:10:08.617342 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:426 hash value calc
+info    1980/01/06 00:10:08.617459 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:436 md5 init
+info    1980/01/06 00:10:08.948522 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:461 md5 final,hash value=[0x955e87740fac9d4ead28bfe96f77fd77]
+info    1980/01/06 00:10:08.948659 [OTA]M=CLD_TX func:Cloud_ServerVersionCheck line:530 32 server version hex=[0x955e87740fac9d4ead28bfe96f77fd77]
+crit    1980/01/06 00:10:08.948733 [OTA]M=CLD_TX func:Cloud_ServerVersionCheck line:540 server version check off
+info    1980/01/06 00:10:08.948788 [OTA]M=CLD_TX func:Cloud_ServerEcuListSet line:311 server ecu list set
+info    1980/01/06 00:10:08.948855 [OTA]M=CLD_TX func:Json_ParseBody line:351 json delete
+info    1980/01/06 00:10:08.948907 [OTA]M=CLD_TX func:Json_ParseBody line:354 json parse body end
+info    1980/01/06 00:10:08.948958 [OTA]M=CLD_TX func:nubCloudGetEcuResult line:1200 [PE]parse get ecu success!
+info    1980/01/06 00:10:08.949010 [OTA]M=CLD_TX func:nubCloudGetEcuResult line:1210 [PE]get ecu result[0xfd]
+info    1980/01/06 00:10:08.949064 [OTA]M=CLD_TX func:CAN_Callback line:174 CAN callback,id=[0],datalen=[0]##################
+info    1980/01/06 00:10:08.949237 [OTA]M=CLD_TX func:wvdcmn_send_event line:838 send event,[06]->[05],procID=[0x00],datasize=[00]
+info    1980/01/06 00:10:08.949313 [OTA]M=CLD_TX func:nubCloudClientSyncResult line:2225 [PE]client sync result[0xfd]
+info    1980/01/06 00:10:08.953405 [OTA]M=CAN_TX func:Pthread_CAN line:1035 recv event=[0x00]
+info    1980/01/06 00:10:08.953492 [OTA]M=CAN_TX func:nswCANRecvEventCheck line:954 Event to PID:[0x00]->[0x00]
+info    1980/01/06 00:10:08.953554 [OTA]M=CAN_TX func:nswCANProcessRun line:760 process run,PID=[0x00],Stage=[0x00]
+info    1980/01/06 00:10:08.956638 [OTA]M=CAN_TX func:nubCANSyncRetryInit line:918 [PE]sync retry init
+info    1980/01/06 00:10:08.956747 [OTA]M=CAN_TX func:nubCANGetEcuList line:937 [PE]get ecu list
+info    1980/01/06 00:10:08.957589 [OTA]M=CAN_TX func:nswCanEcuListConvert line:734 ecu list convert: cloud->can
+info    1980/01/06 00:10:08.957683 [OTA]M=CAN_TX func:Cloud_ServerEcuListGet line:285 server ecu list get
+info    1980/01/06 00:10:08.958570 [OTA]M=CAN_TX func:CAN_EcuListPrint line:267 Print Ecu List: ecu count=[17]
+info    1980/01/06 00:10:08.958660 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu00 addr=[0x07a1],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:08.958803 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu01 addr=[0x07a0],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:08.958872 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu02 addr=[0x07b1],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:08.958932 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu03 addr=[0x0794],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:08.958990 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu04 addr=[0x07b5],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:08.959047 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu05 addr=[0x0734],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:08.959103 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu06 addr=[0x07b0],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:08.959294 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu07 addr=[0x0740],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:08.959356 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu08 addr=[0x0744],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287317 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu09 addr=[0x07c6],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287453 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu10 addr=[0x07e2],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287526 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu11 addr=[0x0795],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287591 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu12 addr=[0x0783],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287652 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu13 addr=[0x07e4],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287714 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu14 addr=[0x07e3],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287773 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu15 addr=[0x0745],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287833 [OTA]M=CAN_TX func:CAN_EcuListPrint line:297 ecu16 addr=[0x07a7],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    1980/01/06 00:10:09.287897 [OTA]M=CAN_TX func:nubCANSyncRequest line:962 [PE]sync request##################
+info    1980/01/06 00:10:09.295211 [OTA]M=CAN_TX func:CAN_SendEventToFEM line:490 send event to FEM[0x01],data=[0x00000000],len=[0]
+info    1980/01/06 00:10:09.295357 [OTA]M=CAN_TX func:wvdcmn_send_event line:838 send event,[05]->[07],procID=[0x01],datasize=[00]
+crit    1980/01/06 00:10:09.295432 [OTA]M=CAN_TX func:nubCANSyncRequest line:965 ############FEM_EVENT_ID_ECU_SYNC_REQ#################################
+info    1980/01/06 00:10:09.295494 [OTA]M=CAN_TX func:wswcmn_del_timer line:484 del timer:5
+info    1980/01/06 00:10:09.295552 [OTA]M=CAN_TX func:wswcmn_set_timer line:408 set timerID:[5], interval:[180000]ms
+info    1980/01/06 00:10:09.296407 [OTA]M=FEM_RX func:Pthread_FEMRecv line:2198 FEM recv event=[0x01]
+info    1980/01/06 00:10:09.296533 [OTA]M=FEM_RX func:Pthread_FEMRecv line:2355 [FEM][FEM_EVENT_ID_ECU_SYNC_REQ]
+info    1980/01/06 00:10:09.296695 [OTA]M=FEM_RX func:CAN_EcuListGet line:237 ecu list get
+info    1980/01/06 00:10:09.304736 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 0][didindex = 0]
+info    1980/01/06 00:10:09.304876 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    1980/01/06 00:10:09.308955 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    1980/01/06 00:10:11.304655 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    1980/01/06 00:10:11.404655 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 0][didindex = 1]
+info    1980/01/06 00:10:11.404829 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    1980/01/06 00:10:11.408470 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    1980/01/06 00:10:13.404660 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    1980/01/06 00:10:13.504694 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 0][didindex = 2]
+info    1980/01/06 00:10:13.504864 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    1980/01/06 00:10:13.509320 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    1980/01/06 00:10:15.504655 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    1980/01/06 00:10:15.604671 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 1][didindex = 0]
+info    1980/01/06 00:10:15.604845 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    1980/01/06 00:10:15.608445 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    1980/01/06 00:10:17.604686 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    1980/01/06 00:10:17.704657 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 1][didindex = 1]
+info    1980/01/06 00:10:17.704835 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    1980/01/06 00:10:17.708308 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:48:57.234043 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:48:57.334510 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 1][didindex = 2]
+info    2018/08/15 08:48:57.334688 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:48:57.338304 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:48:59.334558 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:48:59.434029 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 2][didindex = 0]
+info    2018/08/15 08:48:59.434196 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:48:59.438856 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:01.434038 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:01.534103 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 2][didindex = 1]
+info    2018/08/15 08:49:01.534280 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:01.537846 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:03.534073 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:03.634049 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 2][didindex = 2]
+info    2018/08/15 08:49:03.634230 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:03.638381 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:05.634043 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:05.734027 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 3][didindex = 0]
+info    2018/08/15 08:49:05.734207 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:05.737923 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:07.734034 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:07.834298 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 3][didindex = 1]
+info    2018/08/15 08:49:07.834477 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:07.838187 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:09.834048 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:09.934045 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 3][didindex = 2]
+info    2018/08/15 08:49:09.934216 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:09.938074 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:11.934040 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:12.034028 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 4][didindex = 0]
+info    2018/08/15 08:49:12.034203 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:12.037667 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:14.034073 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:14.134027 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 4][didindex = 1]
+info    2018/08/15 08:49:14.134194 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:14.137775 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:16.134035 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:16.234039 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 4][didindex = 2]
+info    2018/08/15 08:49:16.234750 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:16.238335 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:18.234088 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:18.334072 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 5][didindex = 0]
+info    2018/08/15 08:49:18.334241 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:18.339239 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:20.334035 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:20.434345 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 5][didindex = 1]
+info    2018/08/15 08:49:20.434514 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:20.437997 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:22.434118 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:22.534019 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 5][didindex = 2]
+info    2018/08/15 08:49:22.534348 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:22.538219 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:24.534033 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:24.634046 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 6][didindex = 0]
+info    2018/08/15 08:49:24.634230 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:24.637745 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:26.637489 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:26.734055 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 6][didindex = 1]
+info    2018/08/15 08:49:26.734358 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:26.742460 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:28.734031 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:28.834019 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 6][didindex = 2]
+info    2018/08/15 08:49:28.834190 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:28.839725 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:30.834029 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:30.934026 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 7][didindex = 0]
+info    2018/08/15 08:49:30.934199 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:30.938688 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:32.934029 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:33.034031 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 7][didindex = 1]
+info    2018/08/15 08:49:33.034213 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:33.037936 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:35.034071 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:35.134588 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 7][didindex = 2]
+info    2018/08/15 08:49:35.134849 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:35.138481 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:37.134205 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:37.234039 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 8][didindex = 0]
+info    2018/08/15 08:49:37.234225 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:37.238204 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:39.234035 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:39.334028 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 8][didindex = 1]
+info    2018/08/15 08:49:39.334201 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:39.337956 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:41.334066 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:41.434024 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 8][didindex = 2]
+info    2018/08/15 08:49:41.434190 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:41.437662 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:43.434068 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:43.534023 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 9][didindex = 0]
+info    2018/08/15 08:49:43.534193 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:43.537843 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:45.534029 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:45.634072 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 9][didindex = 1]
+info    2018/08/15 08:49:45.634234 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:45.637860 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:47.634024 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:47.734032 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 9][didindex = 2]
+info    2018/08/15 08:49:47.734212 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:47.738110 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:49.734045 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:49.834034 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 10][didindex = 0]
+info    2018/08/15 08:49:49.834209 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:49.837914 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:51.838735 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:51.934077 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 10][didindex = 1]
+info    2018/08/15 08:49:51.934243 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:51.938391 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:53.934033 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:54.034089 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 10][didindex = 2]
+info    2018/08/15 08:49:54.034261 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:54.038388 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:56.034042 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:56.134971 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 11][didindex = 0]
+info    2018/08/15 08:49:56.135161 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:56.138789 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:49:58.134069 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:49:58.234051 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 11][didindex = 1]
+info    2018/08/15 08:49:58.234239 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:49:58.238760 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:00.234058 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:00.334023 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 11][didindex = 2]
+info    2018/08/15 08:50:00.334192 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:00.338368 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:02.334025 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:02.434033 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 12][didindex = 0]
+info    2018/08/15 08:50:02.434209 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:02.438281 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:04.434027 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:04.534028 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 12][didindex = 1]
+info    2018/08/15 08:50:04.534204 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:04.537802 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+info    2018/08/15 08:50:05.534786 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    2018/08/15 08:50:05.535057 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    2018/08/15 08:50:05.535168 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    2018/08/15 08:50:05.535340 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    2018/08/15 08:50:05.535437 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    2018/08/15 08:50:05.535496 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    2018/08/15 08:50:05.535551 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    2018/08/15 08:50:05.535607 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    2018/08/15 08:50:05.535659 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    2018/08/15 08:50:05.535708 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    2018/08/15 08:50:05.536078 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    2018/08/15 08:50:05.536159 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    2018/08/15 08:50:05.536219 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    2018/08/15 08:50:05.537507 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    2018/08/15 08:50:05.537585 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:50:05.537645 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    2018/08/15 08:50:05.902133 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[243]
+info    2018/08/15 08:50:05.902231 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[243],write @[252],power=[1]
+0d0546000000000d0a 
+info    2018/08/15 08:50:05.902336 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    2018/08/15 08:50:05.902395 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    2018/08/15 08:50:05.902452 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    2018/08/15 08:50:05.902504 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    2018/08/15 08:50:05.902558 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    2018/08/15 08:50:05.902636 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    2018/08/15 08:50:05.902700 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    2018/08/15 08:50:05.902751 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[252],recv_size=[9],count=[0]
+info    2018/08/15 08:50:05.911451 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    2018/08/15 08:50:05.911583 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    2018/08/15 08:50:05.911650 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    2018/08/15 08:50:05.911709 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:50:05.911767 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    2018/08/15 08:50:05.911820 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+crit    2018/08/15 08:50:06.534030 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:06.634040 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 12][didindex = 2]
+info    2018/08/15 08:50:06.634300 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:06.637896 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:08.634044 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:08.734031 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 13][didindex = 0]
+info    2018/08/15 08:50:08.734213 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:08.737675 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:10.734027 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:10.834028 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 13][didindex = 1]
+info    2018/08/15 08:50:10.834206 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:10.837709 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:12.834009 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:12.934025 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 13][didindex = 2]
+info    2018/08/15 08:50:12.934204 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:12.938708 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:14.934034 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:15.034060 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 14][didindex = 0]
+info    2018/08/15 08:50:15.034327 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:15.037928 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:17.034033 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:17.134033 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 14][didindex = 1]
+info    2018/08/15 08:50:17.134202 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:17.138349 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:19.134034 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:19.234026 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 14][didindex = 2]
+info    2018/08/15 08:50:19.234210 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:19.238651 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:21.234293 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:21.334027 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 15][didindex = 0]
+info    2018/08/15 08:50:21.334200 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:21.338756 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:23.334039 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:23.434021 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 15][didindex = 1]
+info    2018/08/15 08:50:23.434192 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:23.438643 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:25.434071 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:25.534031 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 15][didindex = 2]
+info    2018/08/15 08:50:25.534205 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:25.537920 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:27.534091 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:27.634471 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 16][didindex = 0]
+info    2018/08/15 08:50:27.634649 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:27.638689 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:29.634033 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:29.734067 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 16][didindex = 1]
+info    2018/08/15 08:50:29.734350 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:29.738599 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+crit    2018/08/15 08:50:31.739031 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:31.836254 [OTA]M=FEM_RX func:FEM_MainFunction line:2421 [FEM][ecuindex = 16][didindex = 2]
+info    2018/08/15 08:50:31.836441 [OTA]M=FEM_RX func:RPC_SendData line:479 RPC send data,size=[0x0009],[0x5501]
+info    2018/08/15 08:50:31.842466 [OTA]M=ota func:nvdRpcRecvAck line:182 RPC recv ack=[0]
+info    2018/08/15 08:50:33.839407 [OTA]M=FEM_RX func:CAN_EcuVersionSet line:266 ecu version set##################
+crit    2018/08/15 08:50:33.839581 [OTA]M=FEM_RX func:CAN_EcuVersionSet line:316 Tbox version: ota sw=[0.972],ota config=[0.972],soc sw=[0.972]
+info    2018/08/15 08:50:33.839645 [OTA]M=FEM_RX func:CAN_EcuListPrint line:267 Print Ecu List: ecu count=[17]
+info    2018/08/15 08:50:33.839701 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu00 addr=[0x07a1],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.839762 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu01 addr=[0x07a0],didcount=[3],did0 =[0xf195],verlen=[05][0.972] did1 =[0xf18a],verlen=[05][0.972] did2 =[0xf187],verlen=[05][0.972]
+info    2018/08/15 08:50:33.839820 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu02 addr=[0x07b1],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.839876 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu03 addr=[0x0794],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.839932 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu04 addr=[0x07b5],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.839989 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu05 addr=[0x0734],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.840044 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu06 addr=[0x07b0],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.840101 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu07 addr=[0x0740],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.840156 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu08 addr=[0x0744],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.840693 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu09 addr=[0x07c6],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.840784 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu10 addr=[0x07e2],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.840847 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu11 addr=[0x0795],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.840904 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu12 addr=[0x0783],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.840963 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu13 addr=[0x07e4],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.841019 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu14 addr=[0x07e3],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.841075 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu15 addr=[0x0745],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.841237 [OTA]M=FEM_RX func:CAN_EcuListPrint line:297 ecu16 addr=[0x07a7],didcount=[3],did0 =[0xf195],verlen=[00][] did1 =[0xf18a],verlen=[00][] did2 =[0xf187],verlen=[00][]
+info    2018/08/15 08:50:33.841306 [OTA]M=FEM_RX func:CAN_Callback line:174 CAN callback,id=[1],datalen=[1]##################
+00 
+info    2018/08/15 08:50:33.841393 [OTA]M=FEM_RX func:wvdcmn_send_event line:838 send event,[07]->[05],procID=[0x80],datasize=[01]
+crit    2018/08/15 08:50:33.841469 [OTA]M=FEM_RX func:FEM_MainFunction line:2450 ECU sync over##################
+info    2018/08/15 08:50:34.177510 [OTA]M=CAN_TX func:Pthread_CAN line:1035 recv event=[0x80]
+info    2018/08/15 08:50:34.177710 [OTA]M=CAN_TX func:nswCANRecvEventCheck line:965 Event to API:[0x80]
+info    2018/08/15 08:50:34.177795 [OTA]M=CAN_TX func:wswcmn_del_timer line:484 del timer:5
+crit    2018/08/15 08:50:34.177880 [OTA]M=CAN_TX func:nubCANWaitSyncRes line:987 [PE]wait sync response OK!
+info    2018/08/15 08:50:34.177958 [OTA]M=CAN_TX func:Cloud_Callback line:165 cloud callback,id=[0],datalen=[1]
+00 
+info    2018/08/15 08:50:34.178091 [OTA]M=CAN_TX func:wvdcmn_send_event line:838 send event,[05]->[06],procID=[0x04],datasize=[01]
+info    2018/08/15 08:50:34.178220 [OTA]M=CAN_TX func:nubCANWaitSyncRes line:1001 [PE]wait sync response[0xfd]
+crit    2018/08/15 08:50:34.178364 [OTA]M=FEM_RX func:FEM_MainFunction line:2455 [FEM]ECU sync timeout
+info    2018/08/15 08:50:34.185495 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0x04]
+info    2018/08/15 08:50:34.185738 [OTA]M=CLD_TX func:nswCloudProcessRun line:599 process run,PID=[0x04],Stage=[0x05]
+info    2018/08/15 08:50:34.185837 [OTA]M=CLD_TX func:nubCloudSyncResultRetryInit line:1255 [PE]sync version retry init
+info    2018/08/15 08:50:34.185923 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:604 ecu list convert: can->cloud
+info    2018/08/15 08:50:34.186004 [OTA]M=CLD_TX func:CAN_EcuListGet line:237 ecu list get
+crit    2018/08/15 08:50:34.186182 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 0 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186280 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 0 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186367 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 0 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186459 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 2 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186543 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 2 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186623 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 2 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186706 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 3 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186786 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 3 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186867 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 3 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.186948 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 4 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187028 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 4 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187108 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 4 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187190 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 5 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187271 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 5 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187351 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 5 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187434 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 6 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187676 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 6 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187766 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 6 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187853 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 7 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.187936 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 7 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.188066 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 7 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521422 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 8 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521544 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 8 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521612 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 8 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521671 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 9 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521727 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 9 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521780 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 9 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521833 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 10 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521886 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 10 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521938 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 10 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.521992 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 11 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522044 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 11 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522097 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 11 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522151 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 12 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522203 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 12 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522255 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 12 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522308 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 13 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522360 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 13 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522412 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 13 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522465 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 14 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522517 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 14 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522570 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 14 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522623 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 15 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522675 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 15 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522831 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 15 did 2 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522892 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 16 did 0 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.522947 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 16 did 1 ver len=0,error code=[1][0]
+crit    2018/08/15 08:50:34.523002 [OTA]M=CLD_TX func:nswCloudEcuListConvert line:633 ecu 16 did 2 ver len=0,error code=[1][0]
+info    2018/08/15 08:50:34.523157 [OTA]M=CLD_TX func:nubCloudMakeRetryInit line:672 [PE]make data retry init
+info    2018/08/15 08:50:34.523227 [OTA]M=CLD_TX func:nswCloudGetUrl line:579 cmd [3] url=[http://59.46.220.224:30052/ota/v1/syncVersion]
+info    2018/08/15 08:50:34.526428 [OTA]M=CLD_TX func:CreateSyncVersion line:1194 create sync version
+info    2018/08/15 08:50:34.854769 [OTA]M=CLD_TX func:Cloud_ClientVersionCalc line:573 client version calc
+info    2018/08/15 08:50:34.854889 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:426 hash value calc
+info    2018/08/15 08:50:34.854954 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:436 md5 init
+info    2018/08/15 08:50:34.855042 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:461 md5 final,hash value=[0x97d65917603d763563d6eb267726b34b]
+info    2018/08/15 08:50:34.855172 [OTA]M=CLD_TX func:wswcmn_get_time_sec line:1572 get time sec=[1534323034],sec=[1534323034],us=[855096]
+info    2018/08/15 08:50:34.855238 [OTA]M=CLD_TX func:wswcmn_get_time_ms_str line:1604 get time ms str=[1534323034000]
+info    2018/08/15 08:50:34.855298 [OTA]M=CLD_TX func:CreateSyncVersion line:1223 timestamp=[1534323034000]
+info    2018/08/15 08:50:34.855363 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 0 addr=[7a1],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.855446 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 1 addr=[7a0],did count=[3],did0=[f195],ver=[0.972],expmsg=[],did1=[f18a],ver=[0.972],expmsg=[],did2=[f187],ver=[0.972],expmsg=[]
+info    2018/08/15 08:50:34.855524 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 2 addr=[7b1],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.855606 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 3 addr=[794],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.855685 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 4 addr=[7b5],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.855805 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 5 addr=[734],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.855891 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 6 addr=[7b0],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.855970 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 7 addr=[740],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.856047 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 8 addr=[744],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.856144 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 9 addr=[7c6],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.856371 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 10 addr=[7e2],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:34.856462 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 11 addr=[795],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:35.188169 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 12 addr=[783],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:35.188325 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 13 addr=[7e4],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:35.188414 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 14 addr=[7e3],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:35.188622 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 15 addr=[745],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:35.188745 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 16 addr=[7a7],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:35.189142 [OTA]M=CLD_TX func:CreateSyncVersion line:1267 Json Print=[{"server_versionId":"955E87740FAC9D4EAD28BFE96F77FD77","client_versionId":"97d65917603d763563d6eb267726b34b","timestamp":"1534323034000","ecuList":[{"ecu_addr":"7a1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a0","didList":[{"ecu_did":"f195","version":"0.972","exception_msg":""},{"ecu_did":"f18a","version":"0.972","exception_msg":""},{"ecu_did":"f187","version":"0.972","exception_msg":""}]},{"ecu_addr":"7b1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"794","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b5","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"734","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b0","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"740","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"744","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7c6","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e2","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"795","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"783","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e4","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e3","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"745","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a7","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]}]}]
+info    2018/08/15 08:50:35.521640 [OTA]M=CLD_TX func:nubCloudCreateJson line:734 [PE]create json,ret=[0xfd],len=[4252][4252]
+info    2018/08/15 08:50:35.521764 [OTA]M=CLD_TX func:nubCloudSendRetryInit line:779 [PE]send retry init
+info    2018/08/15 08:50:35.522673 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[4252],url=[http://59.46.220.224:30052/ota/v1/syncVersion]
+info    2018/08/15 08:50:35.522768 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/syncVersion],size=[4252],data={"server_versionId":"955E87740FAC9D4EAD28BFE96F77FD77","client_versionId":"97d65917603d763563d6eb267726b34b","timestamp":"1534323034000","ecuList":[{"ecu_addr":"7a1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a0","didList":[{"ecu_did":"f195","version":"0.972","exception_msg":""},{"ecu_did":"f18a","version":"0.972","exception_msg":""},{"ecu_did":"f187","version":"0.972","exception_msg":""}]},{"ecu_addr":"7b1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"794","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b5","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"734","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b0","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"740","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"744","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7c6","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e2","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"795","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"783","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e4","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e3","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"745","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a7","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]}]}
+info    2018/08/15 08:50:35.854842 [OTA]M=CLD_TX func:Cloud_TokenGet line:637 token get[eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw]
+info    2018/08/15 08:50:35.854971 [OTA]M=CLD_TX func:Httpm_Post line:220 http1 header add custom header,token=token: eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw
+info    2018/08/15 08:50:35.855053 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=2018081508503500009,count update=[10]
+info    2018/08/15 08:50:35.855113 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 2018081508503500009
+info    2018/08/15 08:50:36.188911 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    2018/08/15 08:50:46.190279 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+info    2018/08/15 08:50:46.190469 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:916 [PE]send retry [00]
+info    2018/08/15 08:50:46.190534 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfd]
+info    2018/08/15 08:50:46.190596 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:50:46.190653 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    2018/08/15 08:50:47.184432 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    2018/08/15 08:50:47.184625 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    2018/08/15 08:50:47.184797 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:50:47.184871 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[4252],url=[http://59.46.220.224:30052/ota/v1/syncVersion]
+info    2018/08/15 08:50:47.184932 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/syncVersion],size=[4252],data={"server_versionId":"955E87740FAC9D4EAD28BFE96F77FD77","client_versionId":"97d65917603d763563d6eb267726b34b","timestamp":"1534323034000","ecuList":[{"ecu_addr":"7a1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a0","didList":[{"ecu_did":"f195","version":"0.972","exception_msg":""},{"ecu_did":"f18a","version":"0.972","exception_msg":""},{"ecu_did":"f187","version":"0.972","exception_msg":""}]},{"ecu_addr":"7b1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"794","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b5","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"734","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b0","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"740","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"744","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7c6","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e2","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"795","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"783","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e4","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e3","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"745","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a7","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]}]}
+info    2018/08/15 08:50:47.521030 [OTA]M=CLD_TX func:Cloud_TokenGet line:637 token get[eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw]
+info    2018/08/15 08:50:47.521164 [OTA]M=CLD_TX func:Httpm_Post line:220 http1 header add custom header,token=token: eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw
+info    2018/08/15 08:50:47.521243 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=2018081508504700010,count update=[11]
+info    2018/08/15 08:50:47.521304 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 2018081508504700010
+info    2018/08/15 08:50:47.521900 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    2018/08/15 08:50:57.523916 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+crit    2018/08/15 08:50:57.524150 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:921 [PE]send retry retry max
+info    2018/08/15 08:50:57.524326 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfe]
+info    2018/08/15 08:50:57.524442 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:50:57.524553 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    2018/08/15 08:50:58.484500 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    2018/08/15 08:50:58.484677 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    2018/08/15 08:50:58.484740 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:50:58.484804 [OTA]M=CLD_TX func:nubCloudSyncResultRetryCheck line:1315 [PE]sync ver retry [00]
+info    2018/08/15 08:50:58.484862 [OTA]M=CLD_TX func:nubCloudSyncResultRetryCheck line:1325 [PE]sync ver retry check[0xfd]
+info    2018/08/15 08:50:58.484917 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:50:58.484971 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    2018/08/15 08:50:59.485794 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    2018/08/15 08:50:59.485973 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    2018/08/15 08:50:59.486041 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:50:59.486100 [OTA]M=CLD_TX func:nubCloudMakeRetryInit line:672 [PE]make data retry init
+info    2018/08/15 08:50:59.486165 [OTA]M=CLD_TX func:nswCloudGetUrl line:579 cmd [3] url=[http://59.46.220.224:30052/ota/v1/syncVersion]
+info    2018/08/15 08:50:59.486223 [OTA]M=CLD_TX func:CreateSyncVersion line:1194 create sync version
+info    2018/08/15 08:50:59.486298 [OTA]M=CLD_TX func:Cloud_ClientVersionCalc line:573 client version calc
+info    2018/08/15 08:50:59.486356 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:426 hash value calc
+info    2018/08/15 08:50:59.486411 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:436 md5 init
+info    2018/08/15 08:50:59.486493 [OTA]M=CLD_TX func:Cloud_HashValueCalc line:461 md5 final,hash value=[0x97d65917603d763563d6eb267726b34b]
+info    2018/08/15 08:50:59.486565 [OTA]M=CLD_TX func:wswcmn_get_time_sec line:1572 get time sec=[1534323059],sec=[1534323059],us=[486543]
+info    2018/08/15 08:50:59.486729 [OTA]M=CLD_TX func:wswcmn_get_time_ms_str line:1604 get time ms str=[1534323059000]
+info    2018/08/15 08:50:59.486796 [OTA]M=CLD_TX func:CreateSyncVersion line:1223 timestamp=[1534323059000]
+info    2018/08/15 08:50:59.486863 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 0 addr=[7a1],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.486949 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 1 addr=[7a0],did count=[3],did0=[f195],ver=[0.972],expmsg=[],did1=[f18a],ver=[0.972],expmsg=[],did2=[f187],ver=[0.972],expmsg=[]
+info    2018/08/15 08:50:59.487028 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 2 addr=[7b1],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.487106 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 3 addr=[794],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.487186 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 4 addr=[7b5],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.487265 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 5 addr=[734],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.487342 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 6 addr=[7b0],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.487419 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 7 addr=[740],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.487497 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 8 addr=[744],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.487576 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 9 addr=[7c6],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.487653 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 10 addr=[7e2],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.819444 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 11 addr=[795],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.819603 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 12 addr=[783],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.819699 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 13 addr=[7e4],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.819780 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 14 addr=[7e3],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.820035 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 15 addr=[745],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.820127 [OTA]M=CLD_TX func:CreateSyncVersion line:1248 ecu 16 addr=[7a7],did count=[3],did0=[f195],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did1=[f18a],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT],did2=[f187],ver=[],expmsg=[ECU_RESPONSE_TIMEOUT]
+info    2018/08/15 08:50:59.820491 [OTA]M=CLD_TX func:CreateSyncVersion line:1267 Json Print=[{"server_versionId":"955E87740FAC9D4EAD28BFE96F77FD77","client_versionId":"97d65917603d763563d6eb267726b34b","timestamp":"1534323059000","ecuList":[{"ecu_addr":"7a1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a0","didList":[{"ecu_did":"f195","version":"0.972","exception_msg":""},{"ecu_did":"f18a","version":"0.972","exception_msg":""},{"ecu_did":"f187","version":"0.972","exception_msg":""}]},{"ecu_addr":"7b1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"794","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b5","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"734","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b0","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"740","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"744","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7c6","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e2","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"795","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"783","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e4","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e3","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"745","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a7","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]}]}]
+info    2018/08/15 08:51:00.152707 [OTA]M=CLD_TX func:nubCloudCreateJson line:734 [PE]create json,ret=[0xfd],len=[4252][4252]
+info    2018/08/15 08:51:00.152840 [OTA]M=CLD_TX func:nubCloudSendRetryInit line:779 [PE]send retry init
+info    2018/08/15 08:51:00.153402 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[4252],url=[http://59.46.220.224:30052/ota/v1/syncVersion]
+info    2018/08/15 08:51:00.153465 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/syncVersion],size=[4252],data={"server_versionId":"955E87740FAC9D4EAD28BFE96F77FD77","client_versionId":"97d65917603d763563d6eb267726b34b","timestamp":"1534323059000","ecuList":[{"ecu_addr":"7a1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a0","didList":[{"ecu_did":"f195","version":"0.972","exception_msg":""},{"ecu_did":"f18a","version":"0.972","exception_msg":""},{"ecu_did":"f187","version":"0.972","exception_msg":""}]},{"ecu_addr":"7b1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"794","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b5","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"734","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b0","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"740","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"744","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7c6","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e2","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"795","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"783","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e4","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e3","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"745","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a7","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]}]}
+info    2018/08/15 08:51:00.485867 [OTA]M=CLD_TX func:Cloud_TokenGet line:637 token get[eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw]
+info    2018/08/15 08:51:00.485996 [OTA]M=CLD_TX func:Httpm_Post line:220 http1 header add custom header,token=token: eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw
+info    2018/08/15 08:51:00.486078 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=2018081508510000011,count update=[12]
+info    2018/08/15 08:51:00.819105 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 2018081508510000011
+info    2018/08/15 08:51:00.819836 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    2018/08/15 08:51:10.820125 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+info    2018/08/15 08:51:10.820320 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:916 [PE]send retry [00]
+info    2018/08/15 08:51:10.820388 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfd]
+info    2018/08/15 08:51:10.820453 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:51:10.820511 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    2018/08/15 08:51:11.791317 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    2018/08/15 08:51:11.791489 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    2018/08/15 08:51:11.791557 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:51:11.791619 [OTA]M=CLD_TX func:nubCloudSendData line:801 [PE]send data,size=[4252],url=[http://59.46.220.224:30052/ota/v1/syncVersion]
+info    2018/08/15 08:51:11.791681 [OTA]M=CLD_TX func:Httpm_Post line:191 Httpm Post @[http://59.46.220.224:30052/ota/v1/syncVersion],size=[4252],data={"server_versionId":"955E87740FAC9D4EAD28BFE96F77FD77","client_versionId":"97d65917603d763563d6eb267726b34b","timestamp":"1534323059000","ecuList":[{"ecu_addr":"7a1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a0","didList":[{"ecu_did":"f195","version":"0.972","exception_msg":""},{"ecu_did":"f18a","version":"0.972","exception_msg":""},{"ecu_did":"f187","version":"0.972","exception_msg":""}]},{"ecu_addr":"7b1","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"794","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b5","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"734","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7b0","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"740","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"744","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7c6","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e2","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"795","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"783","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e4","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7e3","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"745","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]},{"ecu_addr":"7a7","didList":[{"ecu_did":"f195","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f18a","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"},{"ecu_did":"f187","version":"","exception_msg":"ECU_RESPONSE_TIMEOUT"}]}]}
+info    2018/08/15 08:51:12.126039 [OTA]M=CLD_TX func:Cloud_TokenGet line:637 token get[eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw]
+info    2018/08/15 08:51:12.126273 [OTA]M=CLD_TX func:Httpm_Post line:220 http1 header add custom header,token=token: eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfT1RBX1NUT1JFIiwic3ViIjoiTkVVNTc5NDkwODAxMTYyNDQiLCJleHAiOjE1MzQ3NTQ3NTV9.z9V-Mejhl0TvfCYIKkE9VZA5ihpB8aodCO69gECx0Ivm9dxuP3Ds1mAXcJqO00nLdeQbF_kDWu_NBSHVbgMEjw
+info    2018/08/15 08:51:12.126364 [OTA]M=CLD_TX func:generate_request_id line:874 generate request id=2018081508511200012,count update=[13]
+info    2018/08/15 08:51:12.126423 [OTA]M=CLD_TX func:Httpm_Post line:229 http1 header add custom header,requestid=requestId: 2018081508511200012
+info    2018/08/15 08:51:12.127042 [OTA]M=CLD_TX func:Httpm_Post line:266 easy perform...
+info    2018/08/15 08:51:22.128810 [OTA]M=CLD_TX func:Httpm_Post line:269 http1 easy perform failed![28][Timeout was reached]
+crit    2018/08/15 08:51:22.128994 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:921 [PE]send retry retry max
+info    2018/08/15 08:51:22.129058 [OTA]M=CLD_TX func:nubCloudSendRetryCheck line:926 [PE]send retry[0xfe]
+info    2018/08/15 08:51:22.129120 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+info    2018/08/15 08:51:22.129177 [OTA]M=CLD_TX func:wswcmn_set_timer line:408 set timerID:[4], interval:[1000]ms
+info    2018/08/15 08:51:23.092098 [OTA]M=CLD_TX func:Pthread_CloudSend line:193 recv event=[0xa4]
+crit    2018/08/15 08:51:23.092282 [OTA]M=CLD_TX func:nswCloudProcessWaitTimeout line:278 process wait timeout
+info    2018/08/15 08:51:23.092347 [OTA]M=CLD_TX func:wswcmn_del_timer line:484 del timer:4
+crit    2018/08/15 08:51:23.092409 [OTA]M=CLD_TX func:nubCloudSyncResultRetryCheck line:1320 [PE]sync ver retry max
+info    2018/08/15 08:51:23.092465 [OTA]M=CLD_TX func:nubCloudSyncResultRetryCheck line:1325 [PE]sync ver retry check[0xfe]
+info    2018/08/15 08:51:35.540492 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    2018/08/15 08:51:35.540763 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    2018/08/15 08:51:35.540896 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    2018/08/15 08:51:35.540957 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    2018/08/15 08:51:35.541085 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    2018/08/15 08:51:35.541143 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    2018/08/15 08:51:35.541198 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    2018/08/15 08:51:35.541255 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    2018/08/15 08:51:35.541308 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    2018/08/15 08:51:35.541359 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    2018/08/15 08:51:35.541415 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    2018/08/15 08:51:35.541465 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    2018/08/15 08:51:35.541517 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    2018/08/15 08:51:35.542958 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    2018/08/15 08:51:35.543048 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:51:35.543111 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    2018/08/15 08:51:35.908130 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[252]
+info    2018/08/15 08:51:35.908224 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[252],write @[261],power=[1]
+0d0546000000000d0a 
+info    2018/08/15 08:51:35.908329 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    2018/08/15 08:51:35.908388 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    2018/08/15 08:51:35.908713 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    2018/08/15 08:51:35.908839 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    2018/08/15 08:51:35.908900 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    2018/08/15 08:51:35.908982 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    2018/08/15 08:51:35.909046 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    2018/08/15 08:51:35.909098 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[261],recv_size=[9],count=[0]
+info    2018/08/15 08:51:35.910107 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    2018/08/15 08:51:35.910218 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    2018/08/15 08:51:35.910281 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    2018/08/15 08:51:35.910340 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:51:35.910398 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    2018/08/15 08:51:35.910451 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    2018/08/15 08:53:05.541681 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    2018/08/15 08:53:05.541952 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    2018/08/15 08:53:05.542019 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    2018/08/15 08:53:05.542080 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    2018/08/15 08:53:05.542147 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    2018/08/15 08:53:05.542204 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    2018/08/15 08:53:05.542256 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    2018/08/15 08:53:05.542311 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    2018/08/15 08:53:05.542363 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    2018/08/15 08:53:05.542413 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    2018/08/15 08:53:05.542468 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    2018/08/15 08:53:05.542519 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    2018/08/15 08:53:05.542571 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    2018/08/15 08:53:05.543945 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    2018/08/15 08:53:05.544111 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:53:05.544183 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    2018/08/15 08:53:05.887532 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[261]
+info    2018/08/15 08:53:05.887626 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[261],write @[270],power=[1]
+0d0546000000000d0a 
+info    2018/08/15 08:53:05.887731 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    2018/08/15 08:53:05.887791 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    2018/08/15 08:53:05.887846 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    2018/08/15 08:53:05.887899 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    2018/08/15 08:53:05.887949 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    2018/08/15 08:53:05.888027 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    2018/08/15 08:53:05.888105 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    2018/08/15 08:53:05.888478 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[270],recv_size=[9],count=[0]
+info    2018/08/15 08:53:05.893328 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    2018/08/15 08:53:05.893415 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    2018/08/15 08:53:05.893477 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    2018/08/15 08:53:05.893536 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:53:05.893592 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    2018/08/15 08:53:05.893647 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    2018/08/15 08:54:35.534484 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    2018/08/15 08:54:35.534745 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    2018/08/15 08:54:35.534812 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    2018/08/15 08:54:35.534871 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    2018/08/15 08:54:35.534937 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    2018/08/15 08:54:35.534991 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    2018/08/15 08:54:35.535044 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    2018/08/15 08:54:35.535099 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    2018/08/15 08:54:35.535150 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    2018/08/15 08:54:35.535199 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    2018/08/15 08:54:35.535256 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    2018/08/15 08:54:35.535306 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    2018/08/15 08:54:35.535358 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    2018/08/15 08:54:35.536820 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    2018/08/15 08:54:35.536909 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:54:35.536972 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    2018/08/15 08:54:35.904307 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[270]
+info    2018/08/15 08:54:35.904398 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[270],write @[279],power=[1]
+0d0546000000000d0a 
+info    2018/08/15 08:54:35.904504 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    2018/08/15 08:54:35.904564 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    2018/08/15 08:54:35.904670 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    2018/08/15 08:54:35.904728 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    2018/08/15 08:54:35.904781 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    2018/08/15 08:54:35.904859 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    2018/08/15 08:54:35.904923 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    2018/08/15 08:54:35.904974 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[279],recv_size=[9],count=[0]
+info    2018/08/15 08:54:35.911570 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    2018/08/15 08:54:35.911706 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    2018/08/15 08:54:35.911770 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    2018/08/15 08:54:35.911945 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:54:35.912017 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    2018/08/15 08:54:35.912074 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    2018/08/15 08:56:05.540243 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    2018/08/15 08:56:05.540422 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    2018/08/15 08:56:05.540486 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    2018/08/15 08:56:05.540549 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    2018/08/15 08:56:05.540615 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    2018/08/15 08:56:05.540671 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    2018/08/15 08:56:05.540726 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    2018/08/15 08:56:05.540783 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    2018/08/15 08:56:05.540835 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    2018/08/15 08:56:05.540884 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    2018/08/15 08:56:05.540941 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    2018/08/15 08:56:05.540993 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    2018/08/15 08:56:05.541046 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    2018/08/15 08:56:05.541178 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    2018/08/15 08:56:05.541705 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:56:05.541782 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    2018/08/15 08:56:05.885713 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[279]
+info    2018/08/15 08:56:05.885817 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[279],write @[288],power=[1]
+0d0546000000000d0a 
+info    2018/08/15 08:56:05.885925 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    2018/08/15 08:56:05.885985 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    2018/08/15 08:56:05.886040 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    2018/08/15 08:56:05.886094 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    2018/08/15 08:56:05.886146 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    2018/08/15 08:56:05.886224 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    2018/08/15 08:56:05.886288 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    2018/08/15 08:56:05.886339 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[288],recv_size=[9],count=[0]
+info    2018/08/15 08:56:05.886479 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    2018/08/15 08:56:05.886552 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    2018/08/15 08:56:05.886611 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    2018/08/15 08:56:05.886722 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:56:05.886786 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    2018/08/15 08:56:05.886839 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    2018/08/15 08:57:35.535812 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    2018/08/15 08:57:35.536023 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    2018/08/15 08:57:35.536202 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    2018/08/15 08:57:35.536273 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    2018/08/15 08:57:35.536342 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    2018/08/15 08:57:35.536399 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    2018/08/15 08:57:35.536453 [OTA]M=IPC_TX func:nswIPCProcessRun line:398 process run,PID=[0x04],Stage=[0x03]
+info    2018/08/15 08:57:35.536508 [OTA]M=IPC_TX func:nubIPCHeartbeatRetryInit line:1575 [PE]heartbeat retry init
+info    2018/08/15 08:57:35.536561 [OTA]M=IPC_TX func:nubIPCMakeHeartbeat line:1594 [PE]heartbeat
+info    2018/08/15 08:57:35.536611 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:569 IPC make msg,cmd=[0x00],datalen=[0x0000],data=
+info    2018/08/15 08:57:35.536666 [OTA]M=IPC_TX func:nuwIPCMakeMsg line:613 IPC make msg,size=[9]
+info    2018/08/15 08:57:35.536716 [OTA]M=IPC_TX func:nubIPCSendRetryInit line:1426 [PE]send retry init
+info    2018/08/15 08:57:35.536769 [OTA]M=IPC_TX func:IPC_SendData line:257 IPC send data,fd=[7],state=[2],send size=[9]
+0d0546000000000d0a 
+info    2018/08/15 08:57:35.538199 [OTA]M=IPC_TX func:nubIPCSendData line:1454 [PE]send data[0xfd]
+info    2018/08/15 08:57:35.538278 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:57:35.538337 [OTA]M=IPC_TX func:wswcmn_set_timer line:408 set timerID:[1], interval:[5000]ms
+info    2018/08/15 08:57:35.889226 [OTA]M=IPC_RX func:nswIPCRecvData line:726 IPC recv data,size=[9],write index=[288]
+info    2018/08/15 08:57:35.889312 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:322 recv data analyze,read @[288],write @[297],power=[1]
+0d0546000000000d0a 
+info    2018/08/15 08:57:35.889414 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:398 recv data check,msg data size=[0x0000],recv_size=[0x0009]
+info    2018/08/15 08:57:35.889473 [OTA]M=IPC_RX func:nuwIPCCheckChecksum line:437 check checksum,@[0x0000],size=[3]
+info    2018/08/15 08:57:35.889527 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:407 checksum ok
+info    2018/08/15 08:57:35.889579 [OTA]M=IPC_RX func:nuwIPCRecvAck line:671 recv ack,cmd=[0x00]##################
+info    2018/08/15 08:57:35.889631 [OTA]M=IPC_RX func:IPC_Callback line:144 IPC callback,id=[0],datalen=[1]
+00 
+info    2018/08/15 08:57:35.889708 [OTA]M=IPC_RX func:wvdcmn_send_event line:838 send event,[04]->[03],procID=[0x80],datasize=[01]
+info    2018/08/15 08:57:35.889770 [OTA]M=IPC_RX func:nuwIPCRecvDataCheck line:419 read size=[9]
+info    2018/08/15 08:57:35.889820 [OTA]M=IPC_RX func:IPC_RecvDataAnalyze line:346 read index update @[297],recv_size=[9],count=[0]
+info    2018/08/15 08:57:35.892955 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x80]
+info    2018/08/15 08:57:35.893086 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0x80]
+info    2018/08/15 08:57:35.893149 [OTA]M=IPC_TX func:nswIPCProcessRecvAck line:331 process recv ack,cmd=[0x00]
+info    2018/08/15 08:57:35.893209 [OTA]M=IPC_TX func:wswcmn_del_timer line:484 del timer:1
+info    2018/08/15 08:57:35.893266 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1619 [PE]heartbeat wait ack ok[0x80]
+info    2018/08/15 08:57:35.893321 [OTA]M=IPC_TX func:nubIPCHeartbeatWaitAck line:1644 [PE]heartbeat wait ack[0xfd]
+info    2018/08/15 08:59:05.534378 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0xa3]
+info    2018/08/15 08:59:05.534673 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:603 Event to API:[0xa3]
+info    2018/08/15 08:59:05.534740 [OTA]M=IPC_TX func:nswIPCHeartbeatCycle line:688 heartbeat cyc
+info    2018/08/15 08:59:05.534804 [OTA]M=IPC_TX func:wvdcmn_send_event line:838 send event,[03]->[03],procID=[0x02],datasize=[00]
+info    2018/08/15 08:59:05.534886 [OTA]M=IPC_TX func:Pthread_IPCSend line:175 recv event=[0x02]
+info    2018/08/15 08:59:05.534942 [OTA]M=IPC_TX func:nswIPCRecvEventCheck line:592 Event to PID:[0x02]->[0x04]
+info    201
