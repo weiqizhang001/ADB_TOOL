@@ -63,6 +63,8 @@
             this.button_Browser = new System.Windows.Forms.Button();
             this.textBox_CrcResult = new System.Windows.Forms.TextBox();
             this.textBox_VbfPath = new System.Windows.Forms.TextBox();
+            this.textBox_CrcResultStream = new System.Windows.Forms.TextBox();
+            this.button_CalcCrcStream = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_PullLog.SuspendLayout();
@@ -361,9 +363,11 @@
             // tabPage_VBFParse
             // 
             this.tabPage_VBFParse.Controls.Add(this.richTextBox_Log);
+            this.tabPage_VBFParse.Controls.Add(this.button_CalcCrcStream);
             this.tabPage_VBFParse.Controls.Add(this.button_CalcCrc);
             this.tabPage_VBFParse.Controls.Add(this.label1);
             this.tabPage_VBFParse.Controls.Add(this.button_Browser);
+            this.tabPage_VBFParse.Controls.Add(this.textBox_CrcResultStream);
             this.tabPage_VBFParse.Controls.Add(this.textBox_CrcResult);
             this.tabPage_VBFParse.Controls.Add(this.textBox_VbfPath);
             this.tabPage_VBFParse.Location = new System.Drawing.Point(4, 34);
@@ -431,6 +435,25 @@
             this.textBox_VbfPath.Size = new System.Drawing.Size(690, 33);
             this.textBox_VbfPath.TabIndex = 2;
             // 
+            // textBox_CrcResultStream
+            // 
+            this.textBox_CrcResultStream.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox_CrcResultStream.Location = new System.Drawing.Point(747, 254);
+            this.textBox_CrcResultStream.Name = "textBox_CrcResultStream";
+            this.textBox_CrcResultStream.Size = new System.Drawing.Size(192, 33);
+            this.textBox_CrcResultStream.TabIndex = 2;
+            // 
+            // button_CalcCrcStream
+            // 
+            this.button_CalcCrcStream.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_CalcCrcStream.Location = new System.Drawing.Point(567, 252);
+            this.button_CalcCrcStream.Name = "button_CalcCrcStream";
+            this.button_CalcCrcStream.Size = new System.Drawing.Size(143, 35);
+            this.button_CalcCrcStream.TabIndex = 7;
+            this.button_CalcCrcStream.Text = "流计算CRC";
+            this.button_CalcCrcStream.UseVisualStyleBackColor = true;
+            this.button_CalcCrcStream.Click += new System.EventHandler(this.button_CalcCrcStream_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -493,6 +516,8 @@
         public System.Windows.Forms.TextBox textBox_UpgradeDestPathSOC;
         public System.Windows.Forms.RichTextBox richTextBox_UpgradeLog;
         public System.Windows.Forms.Button button_UpgradeStart;
+        public System.Windows.Forms.Button button_CalcCrcStream;
+        public System.Windows.Forms.TextBox textBox_CrcResultStream;
     }
 }
 

@@ -30,3 +30,15 @@ D:\work\geely\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\adb.exe
 D:\work\geely\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\AdbWinApi.dll
 D:\work\geely\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\AdbWinUsbApi.dll
 D:\work\geely\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\fastboot.exe
+D:\work\geely\github\VBFHelp\VBFHelp\bin\Debug\VBFHelp.exe.config
+D:\work\geely\github\VBFHelp\VBFHelp\obj\Debug\VBFHelp.exe
+D:\work\geely\github\VBFHelp\VBFHelp\obj\Debug\VBFHelp.pdb
+D:\work\geely\github\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\adb.exe
+D:\work\geely\github\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\AdbWinApi.dll
+D:\work\geely\github\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\AdbWinUsbApi.dll
+D:\work\geely\github\VBFHelp\VBFHelp\bin\Debug\depends\adb_win\fastboot.exe
+D:\work\geely\github\VBFHelp\VBFHelp\bin\Debug\VBFHelp.exe
+D:\work\geely\github\VBFHelp\VBFHelp\bin\Debug\VBFHelp.pdb
+D:\work\geely\github\VBFHelp\VBFHelp\obj\Debug\VBFHelp.FormMain.resources
+D:\work\geely\github\VBFHelp\VBFHelp\obj\Debug\VBFHelp.Properties.Resources.resources
+D:\work\geely\github\VBFHelp\VBFHelp\obj\Debug\VBFHelp.csproj.GenerateResource.Cache

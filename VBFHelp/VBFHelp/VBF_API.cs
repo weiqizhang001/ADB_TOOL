@@ -108,7 +108,8 @@ namespace VBFHelp
         public byte[] nubCANCrcDataBuf;
         public int nubCANCrcDataSize;
         public UInt32[] table = new UInt32[256];
-        public UInt32 Crc32 = 0;
+        public UInt32 Crc32 = 0xFFFFFFFF;
+        public UInt32 Crc32Stream = 0xFFFFFFFF;
 
         public void ReadFile(string file_path, out byte[] file_data)
         {
@@ -265,7 +266,7 @@ namespace VBFHelp
 
 
                 // calc crc32
-                Crc32 = 0;
+                Crc32 = 0xFFFFFFFF;
                 //memset(&nubCANCrcDataBuf[0], 0, sizeof(nubCANCrcDataBuf));
                 nubCANCrcDataSize = 0;
                 nubCANCrcDataBuf = new byte[data.Length];
@@ -313,62 +314,54 @@ namespace VBFHelp
 
                 //    FLOPW4(f->erase_size, erase_size);
                 //}
+
+                // calc crc32 in stream
+                strLog += "calculating crc in stream......";
+                Crc32Stream = 0xFFFFFFFF;
+                nubCANCrcDataSize = 0;
+                string str2;
+                UInt32 Crc32In = 0xFFFFFFFF;
+
+                for (i = 0; i < f.block_count; i++)
+                {
+                    crc_offset = f.block_array[i].start_offset;
+                    if (crc_offset > data_len - 1)
+                    {
+                        strLog += String.Format("crc offset error=[0x{0:X}]\n", crc_offset);
+                        crc_offset = data_len - 1;
+                    }
+                    crc_size = ((((int)(f.block_array[i].size)[0]) * 256 * 256 * 256) + (((int)(f.block_array[i].size)[1]) * 256 * 256) + (((int)(f.block_array[i].size)[2]) * 256) + (f.block_array[i].size)[3]);
+                    if ((nubCANCrcDataSize + crc_size) > data.Length)
+                    {
+                        strLog += String.Format("crc size error=[0x{0:X}],[0x{1:X}]\n", crc_size, nubCANCrcDataSize);
+
+                        break;
+                    }
+
+                    strLog += String.Format("crc offset=[0x{0:X}],size=[0x{1:X}],\n", crc_offset, crc_size);
+                    byte[] buf = new byte[crc_size];
+                    Array.Copy(data, crc_offset, buf, 0, crc_size);
+                    nubCANCrcDataSize = nubCANCrcDataSize + crc_size;
+                    nuwCANCalcChecksum(Crc32In, buf, buf.Length, out Crc32Stream, out str2);
+                    Crc32In = Crc32Stream;
+                    strLog += str2;
+                }
+
+                UInt32 crctemp = Crc32Stream;
+                Crc32Stream = Crc32Stream ^ 0xFFFFFFFF;
+
+                strLog += String.Format("before xor=[0x{0:X}],after xor=[0x{1:X}]\n", crctemp, Crc32Stream);
 	
             }
             catch (Exception ex)
             {
                 string err = ex.ToString();
+                strLog += err;
                 //throw;
-            }
-
-            
+            }            
 	
 	        return ret;
         }
-
-
-        //// bit convert
-        //public int bitrev(int input, int bw)
-        //{
-        //    int i;
-        //    int var;
-
-        //    var = 0;
-
-        //    for (i = 0; i < bw; i++)
-        //    {
-        //        if (0 != (input & 0x01))
-        //        {
-        //            var |= 1 << (bw - 1 - i);
-        //        }
-        //        input >>= 1;
-        //    }
-
-        //    return var;
-        //}
-
-        //public int crc32_init(int poly)
-        //{
-        //    UInt32 i;
-        //    int j;
-        //    uint c;
-
-        //    poly = bitrev(poly, 32);
-
-        //    for (i = 0; i < 256; i++)
-        //    {
-        //        c = i;
-        //        for (j = 0; j < 8; j++)
-        //        {
-        //            c = (c & 1) ? (poly ^ (c >> 1)) : (c >> 1);
-        //        }
-
-        //        table[i] = c;
-        //        //CAN_LOG_INFO("%08x\n", table[i]);
-        //    }
-
-        //    return 0;
-        //}
 
         public UInt32 crc32_calc(UInt32 crc, byte[] input, int len)  
         {  
@@ -395,10 +388,6 @@ namespace VBFHelp
         public int nuwCANCalcChecksum(byte[] data, int data_len, out UInt32 crc32, out string strLog)
         {
             UInt32 crc = 0xFFFFFFFF;
-       
-            Array.Clear(table, 0, table.Length);
-	
-            //crc32_init(0x4C11DB7);
 	
             crc = crc32_calc(0xFFFFFFFF, data, data_len);
 	
@@ -416,6 +405,31 @@ namespace VBFHelp
 
 
 	        return 0;
+        }
+
+        // support stream
+        public int nuwCANCalcChecksum(UInt32 crcInit, byte[] data, int data_len, out UInt32 crc32, out string strLog)
+        {
+            UInt32 crc = 0xFFFFFFFF;
+
+            crc = crc32_calc(crcInit, data, data_len);
+
+            //crc32 = crc ^ 0xFFFFFFFF;
+            crc32 = crc;
+
+
+            strLog = String.Format("calc crc32,from[0x{0:X}{1:X}],to[0x{2:X}{3:X}],len=[0x{4:X}],before xor=[0x{5:X}],result=[0x{6:X}],crcInit[0x{7:X}]\n",
+            data[0],
+            data[1],
+            data[data_len - 2],
+            data[data_len - 1],
+            data_len,
+            crc,
+            crc32,
+            crcInit);
+
+
+            return 0;
         }
 
 

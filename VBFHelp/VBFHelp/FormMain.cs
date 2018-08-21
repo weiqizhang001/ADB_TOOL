@@ -72,6 +72,39 @@ namespace VBFHelp
             byte[] buf;
             CAN_File canFile = new CAN_File();
             canFile.name = new byte[200];
+            canFile.block_array = new CAN_Block[99];
+            for (int i = 0; i < canFile.block_array.Length; i++) 
+            {
+                canFile.block_array[i].flash_addr = new byte[4];
+                canFile.block_array[i].size = new byte[4];
+                canFile.block_array[i].checksum = new byte[2];  
+            }
+            
+            canFile.erase_size = new byte[4];
+            canFile.crc32 = new byte[4];
+
+            myVBF.ReadFile(VBFFilePath, out buf);
+            string strLog;
+            myVBF.nswCANGetVbfInfo(0, buf, buf.Length, canFile, out strLog);
+
+            textBox_CrcResult.Text = String.Format("0x{0:X}", myVBF.Crc32);
+            textBox_CrcResultStream.Text = String.Format("0x{0:X}", myVBF.Crc32Stream);
+
+            richTextBox_Log.AppendText(strLog);
+        }
+
+        private void button_CalcCrcStream_Click(object sender, EventArgs e)
+        {
+            if (null == VBFFilePath)
+            {
+                MessageBox.Show("Error: 未找到VBF文件");
+
+                return;
+            }
+
+            byte[] buf;
+            CAN_File canFile = new CAN_File();
+            canFile.name = new byte[200];
             canFile.block_array = new CAN_Block[10];
             canFile.block_array[0].flash_addr = new byte[4];
             canFile.block_array[0].size = new byte[4];
@@ -81,9 +114,10 @@ namespace VBFHelp
 
             myVBF.ReadFile(VBFFilePath, out buf);
             string strLog;
-            myVBF.nswCANGetVbfInfo(0, buf, buf.Length, canFile, out strLog);
+            myVBF.nswCANGetVbfInfo(1, buf, buf.Length, canFile, out strLog);
 
             textBox_CrcResult.Text = String.Format("0x{0:X}", myVBF.Crc32);
+            textBox_CrcResultStream.Text = String.Format("0x{0:X}", myVBF.Crc32Stream);
 
             richTextBox_Log.AppendText(strLog);
         }
